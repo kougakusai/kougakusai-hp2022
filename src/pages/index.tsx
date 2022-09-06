@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { Heading } from 'components/Typography/Heading';
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +12,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <h1 className="text-3xl leading-6">2022年度こうがく祭HP 鋭意制作中</h1>
+        <Heading>2022年度こうがく祭HP 鋭意制作中</Heading>
       </main>
       <footer className="mt-4">©2022年度こうがく祭実行委員会</footer>
     </div>
