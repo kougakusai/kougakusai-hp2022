@@ -1,6 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Image from 'next/image';
 import { Heading } from 'components/Typography';
+import kougakusai_banner from '@public/kougakusai_banner.png';
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +17,12 @@ const Home: NextPage = () => {
         <Heading>2022年度こうがく祭HP 鋭意制作中</Heading>
       </main>
       <footer className="mt-4">©2022年度こうがく祭実行委員会</footer>
+      <Image
+        src={kougakusai_banner}
+        alt="こうがく祭バナー"
+        width={400}
+        height={150}
+      />
     </div>
   );
 };

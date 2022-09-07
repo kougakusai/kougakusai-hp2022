@@ -1,14 +1,14 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Image from 'next/image';
-import background_lines from '../../public/background_lines.png';
-import flip_clock from '../../public/flip_clock.png';
-import kougakusai_banner from '../../public/kougakusai_banner.png';
-import kougakusai_logo from '../../public/kougakusai_logo.png';
-import kougakusai_title from '../../public/kougakusai_title.png';
-import rhino_happi from '../../public/rhino_happi.png';
-import rhino_machine from '../../public/rhino_machine.png';
-import rhino_soldering from '../../public/rhino_soldering.png';
+import background_lines from '@public/background_lines.png';
+import flip_clock from '@public/flip_clock.png';
+import kougakusai_banner from '@public/kougakusai_banner.png';
+import kougakusai_logo from '@public/kougakusai_logo.png';
+import kougakusai_title from '@public/kougakusai_title.png';
+import rhino_happi from '@public/rhino_happi.png';
+import rhino_machine from '@public/rhino_machine.png';
+import rhino_soldering from '@public/rhino_soldering.png';
 
 export default {
   title: 'Public/Images',
