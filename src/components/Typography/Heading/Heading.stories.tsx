@@ -3,7 +3,6 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Heading } from './Heading';
 
 export default {
-  title: 'Typography/Heading',
   component: Heading,
   argTypes: {
     children: { control: 'text' },
@@ -14,7 +13,8 @@ const Template: ComponentStory<typeof Heading> = (args) => (
   <Heading {...args} />
 );
 
-export const Default = Template.bind({});
-Default.args = {
+// eslint-disable-next-line storybook/prefer-pascal-case
+export const heading = Template.bind({});
+heading.args = {
   children: 'Heading',
 };
