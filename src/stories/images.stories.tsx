@@ -1,13 +1,14 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Image from 'next/image';
-import background_lines from '../../../public/background_lines.png';
-import flip_clock from '../../../public/flip_clock.png';
-import kougakusai_banner from '../../../public/kougakusai_banner.png';
-import kougakusai_title from '../../../public/kougakusai_title.png';
-import rhino_happi from '../../../public/rhino_happi.png';
-import rhino_machine from '../../../public/rhino_machine.png';
-import rhino_soldering from '../../../public/rhino_soldering.png';
+import background_lines from '../../public/background_lines.png';
+import flip_clock from '../../public/flip_clock.png';
+import kougakusai_banner from '../../public/kougakusai_banner.png';
+import kougakusai_logo from '../../public/kougakusai_logo.png';
+import kougakusai_title from '../../public/kougakusai_title.png';
+import rhino_happi from '../../public/rhino_happi.png';
+import rhino_machine from '../../public/rhino_machine.png';
+import rhino_soldering from '../../public/rhino_soldering.png';
 
 export default {
   title: 'Public/Images',
@@ -40,6 +41,14 @@ KougakusaiBanner.args = {
   alt: 'kougakusai_banner',
   width: '370',
   height: '150',
+};
+
+export const KougakusaiLogo = Template.bind({});
+KougakusaiLogo.args = {
+  src: kougakusai_logo,
+  alt: 'kougakusai_logo',
+  width: '70',
+  height: '70',
 };
 
 export const KougakusaiTitle = Template.bind({});
