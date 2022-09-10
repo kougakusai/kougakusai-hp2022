@@ -1,45 +1,32 @@
-import menuIcon from '../../../../public/rhino_soldering.png';
+import menuIcon from '@public/rhino_soldering.png';
 import Image from 'next/image';
+import { ComponentPropsWithoutRef } from 'react';
 
 interface Props {
   onClick: () => void;
   className: string;
 }
 
-export const MenuButton: React.FC<Props> = ({
+export const MenuButton = ({
   onClick,
   className,
   ...restProps
-}) => {
+}: ComponentPropsWithoutRef<'button'>) => {
   return (
     <button
-      style={{
-        border: '1px solid black',
-        position: 'relative',
-        width: '48px',
-        height: '48px',
-        borderRadius: '3px',
-      }}
       onClick={onClick}
-      className={className}
+      className={'w-12 h-12 sm:w-28 sm:h-28 relative ' + className}
       {...restProps}
     >
-      <span
-        style={{
-          position: 'absolute',
-          top: '1px',
-          left: '8px',
-          width: '30px',
-          lineHeight: '12px',
-          fontSize: '10px',
-          fontWeight: '700',
-          zIndex: '10',
-        }}
-      >
+      <span className="z-1 absolute top-0.5 left-1.5 text-center text-xs font-bold leading-3 text-gray-800 sm:top-1 sm:left-4 sm:w-20 sm:text-2xl sm:leading-7">
         MENU
       </span>
-      <div style={{ margin: '3px' }}>
-        <Image src={menuIcon} alt="menuIcon" width={40} height={40} />
+      <div className="box-border h-12 w-12 rounded-sm border border-gray-400 p-1 sm:h-28 sm:w-28 sm:p-2">
+        <Image
+          src={menuIcon}
+          alt="menuIcon"
+          className="box-border h-full w-full"
+        />
       </div>
     </button>
   );
