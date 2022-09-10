@@ -1,15 +1,13 @@
 import clsx from 'clsx';
-import Image, { ImageProps } from 'next/image';
-import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
-import { ComponentPropsWithoutRef, MouseEvent, MouseEventHandler } from 'react';
+import { ComponentPropsWithoutRef } from 'react';
 
 export const HomeButton = ({
   onClick,
   className,
-  title,
   ...restProps
-}: ComponentPropsWithoutRef<'button'>) => {
+}: Omit<ComponentPropsWithoutRef<'button'>, 'title'>) => {
   const router = useRouter();
   return (
     <button
@@ -18,7 +16,7 @@ export const HomeButton = ({
         onClick && onClick(e);
       }}
       className={clsx('h-[68px] w-[68px]', className)}
-      title={title || 'ホーム'}
+      title="ホーム"
       {...restProps}
     >
       <Image
