@@ -7,8 +7,8 @@ export const FlipCalendar = ({
   children,
   ...rest
 }: ComponentPropsWithoutRef<'div'>) => (
-  <div className={clsx('relative h-[140px] w-[70px]', className)} {...rest}>
-    <Image src="/flip_clock.png" alt="カウントダウン" width={70} height={140} />
+  <div className={clsx('relative h-[110px] w-[70px]', className)} {...rest}>
+    <Image src="/flip_clock.png" alt="カウントダウン" width={70} height={110} />
     <p className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] font-[Roboto] text-[48px] font-bold leading-[56px]">
       {children}
     </p>
