@@ -3,9 +3,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { ComponentPropsWithoutRef, useEffect, useReducer } from 'react';
 
-const smSize = 68;
-const lgSize = 153;
-const breakPoint = 640;
+const breakPoint = 639;
 
 export const HomeButton = ({
   onClick,
@@ -49,8 +47,8 @@ export const HomeButton = ({
       <Image
         src="/kougakusai_logo.svg"
         alt="こうがく祭ロゴ"
-        width={isMobile ? smSize : lgSize}
-        height={isMobile ? smSize : lgSize}
+        width={isMobile ? 68 : 153}
+        height={isMobile ? 68 : 153}
       />
     </button>
   );
