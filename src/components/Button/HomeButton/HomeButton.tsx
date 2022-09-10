@@ -5,7 +5,7 @@ import { ComponentPropsWithoutRef, useEffect, useReducer } from 'react';
 
 const smSize = 68;
 const lgSize = 153;
-const breakPoint = 1000;
+const breakPoint = 640;
 
 export const HomeButton = ({
   onClick,
