@@ -16,19 +16,23 @@ export const CountDown = ({
       )}
       {...rest}
     >
-      <span className=" col-span-2 mb-[16px] self-end text-center font-[Roboto] text-[24px] font-bold leading-[28px] text-[#18283f]">
+      <span className=" col-span-2 mb-[16px] self-end text-center font-[Roboto] text-[24px] font-bold leading-[28px] text-[#18283f] sm:text-[48px] sm:leading-[56px]">
         開催まで
       </span>
 
       <div className="flex items-end">
-        <span className="mb-[30px] mr-[16px] font-[Roboto] text-[24px] font-bold leading-[28px] text-[#18283f] [-webkit-text-stroke:0.3px_white]">
+        {/* [-webkit-text-stroke]がsm:をつけても重複判定されるため無効化 */}
+        {/* eslint-disable-next-line tailwindcss/no-contradicting-classname */}
+        <span className="mb-[30px] mr-[16px] font-[Roboto] text-[24px] font-bold leading-[28px] text-[#18283f] [-webkit-text-stroke:0.3px_white] sm:text-[48px] sm:leading-[56px] sm:[-webkit-text-stroke:1px_white]">
           あと
         </span>
         <FlipCalendar>{leftNum}</FlipCalendar>
       </div>
       <div className="flex items-end">
         <FlipCalendar>{rightNum}</FlipCalendar>
-        <span className="ml-[16px] mb-[30px] font-[Roboto] text-[24px] font-bold leading-[28px] text-[#18283f] [-webkit-text-stroke:0.3px_white]">
+        {/* [-webkit-text-stroke]がsm:をつけても重複判定されるため無効化 */}
+        {/* eslint-disable-next-line tailwindcss/no-contradicting-classname */}
+        <span className="ml-[16px] mb-[30px] font-[Roboto] text-[24px] font-bold leading-[28px] text-[#18283f] [-webkit-text-stroke:0.3px_white] sm:text-[48px] sm:leading-[56px] sm:[-webkit-text-stroke:1px_white]">
           日
         </span>
       </div>
