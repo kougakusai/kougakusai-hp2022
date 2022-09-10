@@ -40,7 +40,7 @@ export const HomeButton = ({
         router.push('/');
         onClick && onClick(e);
       }}
-      className={clsx(`h-[68px] w-[68px] lg:h-[153px] lg:w-[153px]`, className)}
+      className={clsx(`h-[68px] w-[68px] sm:h-[153px] sm:w-[153px]`, className)}
       title={title || 'ホーム'}
       {...restProps}
     >
