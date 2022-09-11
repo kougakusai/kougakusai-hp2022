@@ -2,15 +2,13 @@ import menuIcon from '@public/rhino_soldering.png';
 import Image from 'next/image';
 import { ComponentPropsWithoutRef } from 'react';
 
-interface Props extends ComponentPropsWithoutRef<'button'> {
-  onClick: () => void;
-  className: string;
-}
-
-export const MenuButton = ({ onClick, className, ...restProps }: Props) => {
+export const MenuButton = ({
+  className,
+  ...restProps
+}: ComponentPropsWithoutRef<'button'>) => {
   return (
     <button
-      onClick={onClick}
+      onClick={() => console.log('aa')}
       className={'w-12 h-12 sm:w-28 sm:h-28 relative ' + className}
       {...restProps}
     >
