@@ -24,7 +24,7 @@ export const FlipCalendar = ({
         width={isMobile ? 70 : 140}
         height={isMobile ? 110 : 220}
       />
-      <p className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] font-[Roboto] text-[48px] font-bold leading-[56px] sm:text-[88px] sm:leading-[104px]">
+      <p className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] font-[Roboto] text-[48px] font-bold leading-[56px] text-[#18283f] sm:text-[88px] sm:leading-[104px]">
         {children}
       </p>
     </div>
