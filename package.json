@@ -8,6 +8,7 @@
     "start": "yarn build && next start",
     "lint": "next lint",
     "export": "yarn build && next export",
+    "archive": "yarn export && tar -czf kougakusai_hp_2022.tar.gz out",
     "fmt": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "fix": "yarn fmt && yarn lint",
     "storybook": "start-storybook -p 6006",
