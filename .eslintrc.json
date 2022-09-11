@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
+  "plugins": ["tailwindcss"],
+  "extends": [
+    "plugin:tailwindcss/recommended",
+    "plugin:storybook/recommended",
+    "next/core-web-vitals",
+    "prettier"
+  ]
 }
