@@ -9,6 +9,7 @@ import kougakusai_title from '@public/kougakusai_title.png';
 import rhino_happi from '@public/rhino_happi.png';
 import rhino_machine from '@public/rhino_machine.png';
 import rhino_soldering from '@public/rhino_soldering.png';
+import univ_logo from '@public/univ_logo.png';
 
 export default {
   title: 'Public/Images',
@@ -80,5 +81,13 @@ RhinoSoldering.args = {
   src: rhino_soldering,
   alt: 'rhino_soldering',
   width: '40',
+  height: '40',
+};
+
+export const UnivLogo = Template.bind({});
+UnivLogo.args = {
+  src: univ_logo,
+  alt: 'univ_logo',
+  width: '70',
   height: '40',
 };
