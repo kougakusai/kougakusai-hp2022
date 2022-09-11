@@ -27,7 +27,7 @@ export const LinkButton = ({
 }: { text: string } & ComponentPropsWithoutRef<'button'>) => (
   <button
     className={clsx(
-      'inline-flex h-8 w-36 select-none items-center justify-center gap-x-2 rounded-full border border-solid border-[#18283F] px-4',
+      'inline-flex h-8 w-36 select-none items-center justify-center gap-x-2 rounded-full px-4',
       className
     )}
     {...restProps}

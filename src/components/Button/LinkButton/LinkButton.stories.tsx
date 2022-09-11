@@ -12,10 +12,19 @@ const Template: ComponentStory<typeof LinkButton> = (args) => (
 );
 
 // eslint-disable-next-line storybook/prefer-pascal-case
-export const linkButton = Template.bind({});
-linkButton.args = {
+export const seeMoreButton = Template.bind({});
+seeMoreButton.args = {
   text: 'もっと見る',
   disabled: false,
   onClick: () => {},
-  className: '',
+  className: 'border border-solid border-[#18283F] text-[#18283F]',
+};
+
+// eslint-disable-next-line storybook/prefer-pascal-case
+export const contactButton = Template.bind({});
+contactButton.args = {
+  text: 'お問い合わせ',
+  disabled: false,
+  onClick: () => {},
+  className: 'bg-[#18283F] text-white',
 };
