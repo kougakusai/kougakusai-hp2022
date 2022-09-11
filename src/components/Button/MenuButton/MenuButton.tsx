@@ -8,7 +8,6 @@ export const MenuButton = ({
 }: ComponentPropsWithoutRef<'button'>) => {
   return (
     <button
-      onClick={() => console.log('aa')}
       className={'w-12 h-12 sm:w-28 sm:h-28 relative ' + className}
       {...restProps}
     >
