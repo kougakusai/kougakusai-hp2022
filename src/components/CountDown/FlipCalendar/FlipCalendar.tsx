@@ -13,7 +13,7 @@ export const FlipCalendar = ({
   return (
     <div
       className={clsx(
-        'relative h-[110px] w-[70px] sm:h-[220px] sm:w-[140px]',
+        'relative h-[110px] w-[70px] select-none sm:h-[220px] sm:w-[140px]',
         className
       )}
       {...rest}

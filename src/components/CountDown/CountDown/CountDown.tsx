@@ -11,12 +11,12 @@ export const CountDown = ({
   return (
     <div
       className={clsx(
-        'grid w-fit auto-rows-min grid-cols-2 grid-rows-[min-content_minmax(0,_1fr)]',
+        'grid w-fit select-none auto-rows-min grid-cols-2 grid-rows-[min-content_minmax(0,_1fr)]',
         className
       )}
       {...rest}
     >
-      <span className=" col-span-2 mb-[16px] self-end text-center font-[Roboto] text-[24px] font-bold leading-[28px] text-[#18283f] sm:text-[48px] sm:leading-[56px]">
+      <span className="col-span-2 mb-[16px] self-end text-center font-[Roboto] text-[24px] font-bold leading-[28px] text-[#18283f] sm:text-[48px] sm:leading-[56px]">
         開催まで
       </span>
 
