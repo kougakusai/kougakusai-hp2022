@@ -13,7 +13,7 @@ const Template: ComponentStory<typeof RoundedButton> = (args) => (
 // eslint-disable-next-line storybook/prefer-pascal-case
 export const roundedButton = Template.bind({});
 roundedButton.args = {
-  text: '詳しく見る',
+  children: '詳しく見る',
   disabled: false,
   onClick: () => {},
   className: '',
