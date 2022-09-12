@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import { useRouter } from 'next/router';
 import { ComponentPropsWithoutRef } from 'react';
-import { Url } from 'url';
 
 const RightCircleArrow = (props: ComponentPropsWithoutRef<'svg'>) => (
   <svg viewBox="0 0 16 16" {...props}>
@@ -28,12 +27,12 @@ export const LinkButton = ({
   children,
   className,
   ...restProps
-}: ComponentPropsWithoutRef<'button'> & { href: string }) => {
+}: ComponentPropsWithoutRef<'button'> & { href?: string }) => {
   const router = useRouter();
   return (
     <button
       onClick={(e) => {
-        router.push(href);
+        href && router.push(href);
         onClick && onClick(e);
       }}
       className={clsx(

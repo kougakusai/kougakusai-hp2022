@@ -1,6 +1,4 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { link } from 'fs/promises';
-
 import { LinkButton } from './LinkButton';
 
 export default {
@@ -11,9 +9,8 @@ const Template: ComponentStory<typeof LinkButton> = (args) => (
   <LinkButton {...args} />
 );
 
-// eslint-disable-next-line storybook/prefer-pascal-case
-export const seeMoreButton = Template.bind({});
-seeMoreButton.args = {
+export const SeeMoreButton = Template.bind({});
+SeeMoreButton.args = {
   href: '/news',
   children: 'もっと見る',
   disabled: false,
@@ -21,9 +18,8 @@ seeMoreButton.args = {
   className: 'border border-solid border-[#18283F] text-[#18283F] font-bold',
 };
 
-// eslint-disable-next-line storybook/prefer-pascal-case
-export const contactButton = Template.bind({});
-contactButton.args = {
+export const ContactButton = Template.bind({});
+ContactButton.args = {
   href: '/contact',
   children: 'お問い合わせ',
   disabled: false,
