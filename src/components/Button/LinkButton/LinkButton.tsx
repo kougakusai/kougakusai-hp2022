@@ -1,5 +1,7 @@
 import clsx from 'clsx';
+import { useRouter } from 'next/router';
 import { ComponentPropsWithoutRef } from 'react';
+import { Url } from 'url';
 
 const RightCircleArrow = (props: ComponentPropsWithoutRef<'svg'>) => (
   <svg viewBox="0 0 16 16" {...props}>
@@ -21,20 +23,29 @@ const RightCircleArrow = (props: ComponentPropsWithoutRef<'svg'>) => (
 );
 
 export const LinkButton = ({
-  text,
+  href,
+  onClick,
+  children,
   className,
   ...restProps
-}: { text: string } & ComponentPropsWithoutRef<'button'>) => (
-  <button
-    className={clsx(
-      'inline-flex h-8 w-36 select-none items-center justify-center gap-x-2 rounded-full px-4',
-      className
-    )}
-    {...restProps}
-  >
-    <span className="flex-auto text-ellipsis whitespace-nowrap text-center align-middle text-xs font-bold">
-      {text}
-    </span>
-    <RightCircleArrow className="h-4 w-4" />
-  </button>
-);
+}: ComponentPropsWithoutRef<'button'> & { href: string }) => {
+  const router = useRouter();
+  return (
+    <button
+      onClick={(e) => {
+        router.push(href);
+        onClick && onClick(e);
+      }}
+      className={clsx(
+        'inline-flex h-8 w-36 select-none items-center justify-center gap-x-2 rounded-full px-4',
+        className
+      )}
+      {...restProps}
+    >
+      <span className="flex-auto text-ellipsis whitespace-nowrap text-center align-middle text-xs">
+        {children}
+      </span>
+      <RightCircleArrow className="h-4 w-4" />
+    </button>
+  );
+};
