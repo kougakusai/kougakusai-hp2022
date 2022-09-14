@@ -25,8 +25,8 @@ export const Landing = () => {
         <Image
           src={UnivLogo}
           alt="茨城大学のロゴマーク"
-          width={isMobile ? 70 : 140}
-          height={isMobile ? 40 : 80}
+          width={isMobile ? 80 : 160}
+          height={isMobile ? 50 : 100}
         />
       </div>
       <div>
