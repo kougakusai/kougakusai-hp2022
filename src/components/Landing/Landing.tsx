@@ -25,8 +25,8 @@ export const Landing = () => {
         <Image
           src={UnivLogo}
           alt="茨城大学のロゴマーク"
-          width={isMobile ? 70 : 140}
-          height={isMobile ? 40 : 80}
+          width={isMobile ? 80 : 160}
+          height={isMobile ? 50 : 100}
         />
       </div>
       <div>
@@ -38,7 +38,7 @@ export const Landing = () => {
         />
       </div>
       <CountDown className="mx-auto" />
-      <RoundedButton className="mt-[32px]">詳しく見る</RoundedButton>
+      <RoundedButton className="mt-[32px]">制作中</RoundedButton>
       <div className="sm:mt-[-400px]">
         <Image
           src={RhinoMachine}
