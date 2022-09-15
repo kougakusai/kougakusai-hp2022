@@ -38,7 +38,7 @@ export const Landing = () => {
         />
       </div>
       <CountDown className="mx-auto" />
-      <RoundedButton className="mt-[32px]">詳しく見る</RoundedButton>
+      <RoundedButton className="mt-[32px]">制作中</RoundedButton>
       <div className="sm:mt-[-400px]">
         <Image
           src={RhinoMachine}
