@@ -82,11 +82,11 @@ export const Marquee = ({
   }
 
   @keyframes flowR2L {
-    0% {
+    from {
       transform: translateX(100%);
       visibility: visible;
     }
-    100% {
+    to {
       transform: translateX(-100%);
       visibility: hidden;
     }
