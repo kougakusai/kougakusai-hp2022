@@ -70,9 +70,10 @@ export const Marquee = ({
     vertical-align: middle;
 
     display: inline-block;
-    width: max-content;
     position: absolute;
+    width: auto;
     left: 0;
+    right: 0;
 
     visibility: hidden;
     animation: ${
@@ -81,22 +82,22 @@ export const Marquee = ({
   }
 
   @keyframes flowR2L {
-    from {
-      transform: translateX(${containerWidth}px);
+    0% {
+      transform: translateX(100%);
       visibility: visible;
     }
-    to {
-      transform: translateX(calc(-${containerWidth}px - 100%));
+    100% {
+      transform: translateX(-100%);
       visibility: hidden;
     }
   }
   @keyframes flowL2R {
     from {
-      transform: translateX(calc(-${containerWidth}px - 100%));
+      transform: translateX(-100%);
       visibility: visible;
     }
     to {
-      transform: translateX(${containerWidth}px);
+      transform: translateX(100%);
       visibility: hidden;
     }
   }
