@@ -12,6 +12,6 @@ export const Copyright = ({
     )}
     {...restProps}
   >
-    &copy;2022年度こうがく祭実行委員会
+    &copy; 2022 こうがく祭実行委員会
   </small>
 );
