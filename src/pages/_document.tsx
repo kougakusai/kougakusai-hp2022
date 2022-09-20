@@ -18,7 +18,7 @@ export default function Document() {
         <meta name="og:title" content="2022年度こうがく祭公式HP" />
         <meta
           property="og:description"
-          content="茨城大学の工学部による学園祭、こうがく祭の2022年度版公式ホームページです。今年は今年は11月5日に開催されます。"
+          content="茨城大学の工学部による学園祭、こうがく祭の2022年度版公式ホームページです。今年は11月5日に開催されます。"
         />
         <meta
           property="og:site_name"
