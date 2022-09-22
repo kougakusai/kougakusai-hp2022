@@ -76,9 +76,14 @@ export const Marquee = ({
     right: 0;
 
     visibility: hidden;
-    animation: ${
-      direction === 'left' ? 'flowR2L' : 'flowL2R'
-    } ${flowTime}s linear infinite;
+  }
+
+  .animation-flowR2L {
+    animation: flowR2L ${flowTime}s linear infinite;
+  }
+
+  .animation-flowL2R {
+    animation: flowL2R ${flowTime}s linear infinite;
   }
 
   @keyframes flowR2L {
@@ -127,7 +132,10 @@ export const Marquee = ({
         {new Array(textCount || 1).fill(0).map((_, index) => (
           <div
             // eslint-disable-next-line tailwindcss/no-custom-classname
-            className="marquee-text"
+            className={clsx(
+              'marquee-text',
+              direction === 'left' ? 'animation-flowR2L' : 'animation-flowL2R'
+            )}
             style={{
               animationDelay: `${roundFirstDecimal(
                 (index * flowTime) / textCount
