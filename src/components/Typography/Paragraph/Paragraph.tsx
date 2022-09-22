@@ -8,7 +8,7 @@ export const Paragraph = ({
 }: ComponentPropsWithoutRef<'p'>) => (
   <p
     className={clsx(
-      'font-[Roboto] text-[1rem] font-bold leading-[1.125rem] text-[#18283F]',
+      'font-[Roboto] text-[1rem] leading-[1.125rem] text-[#18283F]',
       className
     )}
     {...restProps}
