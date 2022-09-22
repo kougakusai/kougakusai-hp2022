@@ -51,11 +51,25 @@ export const MenuDrawer = ({
         </div>
       </div>
       <ul className="mt-[32px] grid grid-cols-1 gap-y-[32px] sm:mt-[128px] sm:grid-cols-2 sm:gap-y-[48px] sm:gap-x-[96px]">
-        {links.map((link) => (
+        {/* TODO: 遷移先実装時にリンク有効化 */}
+        {/* {links.map((link) => (
           <li key={link.href}>
             <MenuLink href={link.href}>{link.name}</MenuLink>
           </li>
-        ))}
+        ))} */}
+        <li>
+          <MenuLink href={links[0].href}>{links[0].name}</MenuLink>
+        </li>
+        {links.map(
+          (link, i) =>
+            i !== 0 && (
+              <li key={link.href}>
+                <p className="font-[Roboto] text-[1.5rem] font-bold leading-7 text-[#18283f] sm:text-[2.5rem] sm:leading-[3rem]">
+                  {link.name}
+                </p>
+              </li>
+            )
+        )}
       </ul>
       <div className="mt-auto">
         <div className="mt-[40px] sm:mt-[120px]">
