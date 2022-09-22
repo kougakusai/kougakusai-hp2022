@@ -1,18 +1,17 @@
 import { ComponentPropsWithoutRef } from 'react';
-import clsx from 'clsx';
 import { Paragraph, Small } from 'components/Typography';
 
 export const NotificationItem = ({
   date,
   category,
   text,
-  className,
+  ...restProps
 }: ComponentPropsWithoutRef<'div'> & {
   date: string;
   category: string;
   text: string;
 }) => (
-  <div className={clsx('', className)}>
+  <div {...restProps}>
     <div className="flex gap-[8px]">
       <Small>{date}</Small>
       <Small>|</Small>

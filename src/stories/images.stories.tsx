@@ -8,6 +8,7 @@ import kougakusai_logo from '@public/kougakusai_logo.svg';
 import kougakusai_title from '@public/kougakusai_title.png';
 import rhino_happi from '@public/rhino_happi.png';
 import rhino_machine from '@public/rhino_machine.png';
+import rhino_pc from '@public/rhino_pc.png';
 import rhino_soldering from '@public/rhino_soldering.png';
 import univ_logo from '@public/univ_logo.png';
 
@@ -74,6 +75,14 @@ RhinoMachine.args = {
   alt: 'rhino_machine',
   width: '400',
   height: '210',
+};
+
+export const RhinoPC = Template.bind({});
+RhinoPC.args = {
+  src: rhino_pc,
+  alt: 'rhino_pc',
+  width: '200',
+  height: '200',
 };
 
 export const RhinoSoldering = Template.bind({});
