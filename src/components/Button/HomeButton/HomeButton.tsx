@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { ComponentPropsWithoutRef, useEffect, useReducer } from 'react';
+import { useCloseMenu } from 'hooks/useCloseMenu';
 
 const breakPoint = 639;
 
@@ -12,6 +13,7 @@ export const HomeButton = ({
   ...restProps
 }: ComponentPropsWithoutRef<'button'>) => {
   const router = useRouter();
+  const closeMenu = useCloseMenu();
 
   const useMobileView = () => {
     const [matches, setMatches] = useReducer(
@@ -38,6 +40,7 @@ export const HomeButton = ({
     <button
       onClick={(e) => {
         router.push('/');
+        closeMenu();
         onClick && onClick(e);
       }}
       className={clsx(`h-[68px] w-[68px] sm:h-[153px] sm:w-[153px]`, className)}

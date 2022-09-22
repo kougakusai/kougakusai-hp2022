@@ -5,17 +5,20 @@ import { Copyright } from 'components/Copyright';
 import { MenuLink } from 'components/Link';
 import { Paragraph } from 'components/Typography';
 import { useMobileView } from 'hooks/useMobileView';
+import { useMenuOpen } from 'hooks/useMenuOpen';
 
 export const MenuDrawer = ({
   className,
   ...restProps
 }: ComponentPropsWithoutRef<'nav'>) => {
   const isMobile = useMobileView();
+  const menuOpen = useMenuOpen();
 
   return (
     <nav
       className={clsx(
-        'min-h-full min-w-full bg-[#edbd83] px-[24px] pt-[80px] sm:flex sm:flex-col sm:items-center',
+        'fixed inset-0 bg-[#edbd83] px-[24px] pt-[80px] sm:flex sm:flex-col sm:items-center',
+        !menuOpen && 'invisible',
         className
       )}
       {...restProps}
@@ -54,15 +57,17 @@ export const MenuDrawer = ({
           </li>
         ))}
       </ul>
-      <div className="mt-[40px] sm:mt-[120px]">
-        <Image
-          src="/kougakusai_banner.png"
-          alt="こうがく祭バナー"
-          width={isMobile ? 370 : 590}
-          height={isMobile ? 150 : 240}
-        />
+      <div className="mt-auto">
+        <div className="mt-[40px] sm:mt-[120px]">
+          <Image
+            src="/kougakusai_banner.png"
+            alt="こうがく祭バナー"
+            width={isMobile ? 370 : 590}
+            height={isMobile ? 150 : 240}
+          />
+        </div>
+        <Copyright className="block py-[24px] text-center sm:pb-[40px]" />
       </div>
-      <Copyright className="block py-[24px] text-center sm:pb-[40px]" />
     </nav>
   );
 };
