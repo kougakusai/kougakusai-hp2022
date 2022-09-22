@@ -2,6 +2,10 @@ import type { NextPageWithLayout } from 'pages/_app';
 import Head from 'next/head';
 import { TopPageLayout } from 'components/Layouts';
 import { Landing } from 'components/Landing';
+import { NotificationList } from 'components/Notification';
+import { About } from 'components/About';
+import { SponsorList } from 'components/Sponsor';
+import { Footer } from 'components/Footer';
 
 const Home: NextPageWithLayout = () => {
   return (
@@ -12,6 +16,10 @@ const Home: NextPageWithLayout = () => {
 
       <main>
         <Landing />
+        <NotificationList className="m-[16px]" />
+        <About className="mt-[80px]" />
+        <SponsorList className="mt-[24px] h-[200px]" />
+        <Footer />
       </main>
     </>
   );
