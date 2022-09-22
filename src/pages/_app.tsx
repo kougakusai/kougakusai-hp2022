@@ -12,9 +12,9 @@ type AppPropsWithLayout = AppProps & { Component: NextPageWithLayout };
 
 export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
-  return getLayout(
+  return (
     <MenuContextProvider>
-      <Component {...pageProps} />
+      {getLayout(<Component {...pageProps} />)}
     </MenuContextProvider>
   );
 }
