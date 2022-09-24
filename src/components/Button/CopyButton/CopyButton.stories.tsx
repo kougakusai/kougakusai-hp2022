@@ -1,4 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Popover } from 'components/Popover';
 
 import { CopyButton } from './CopyButton';
 
@@ -12,10 +13,4 @@ const Template: ComponentStory<typeof CopyButton> = (args) => (
 
 // eslint-disable-next-line storybook/prefer-pascal-case
 export const copyButton = Template.bind({});
-copyButton.args = {
-  /** コピーされるリンク */
-  link: 'http://kougakusai.eng.ibaraki.ac.jp/',
-  /** ハイパーリンクの表示テキスト */
-  text: 'こうがく祭',
-  title: 'こうがく祭公式サイトへのリンクをコピー',
-};
+copyButton.args = {};
