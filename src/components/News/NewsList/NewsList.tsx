@@ -3,9 +3,9 @@ import Image from 'next/image';
 import clsx from 'clsx';
 import { Heading } from 'components/Typography';
 import { LinkButton } from 'components/Button';
-import { NotificationItem } from '../NotificationItem';
+import { NewsItem } from '../NewsItem';
 
-export const NotificationList = ({
+export const NewsList = ({
   children,
   className,
   ...restProps
@@ -15,12 +15,8 @@ export const NotificationList = ({
     {...restProps}
   >
     <Heading className="text-center">お知らせ</Heading>
-    {notifications.map((notification) => (
-      <NotificationItem
-        key={notification.date + notification.text}
-        className="mt-[24px]"
-        {...notification}
-      />
+    {News.map((item) => (
+      <NewsItem key={item.date + item.text} className="mt-[24px]" {...item} />
     ))}
     <div className="flex justify-center">
       <LinkButton className="mt-[24px] items-center border border-solid border-[#18283F] font-bold text-[#18283F]">
@@ -38,7 +34,7 @@ export const NotificationList = ({
   </section>
 );
 
-const notifications = [
+const News = [
   {
     date: '2022/9/22',
     category: 'その他',

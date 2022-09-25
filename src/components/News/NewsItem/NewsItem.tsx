@@ -1,7 +1,7 @@
 import { ComponentPropsWithoutRef } from 'react';
 import { Paragraph, Small } from 'components/Typography';
 
-export const NotificationItem = ({
+export const NewsItem = ({
   date,
   category,
   text,
