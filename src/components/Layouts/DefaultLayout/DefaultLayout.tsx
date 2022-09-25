@@ -11,13 +11,13 @@ export const DefaultLayout = ({
   pageTitle: string;
   children: ReactNode;
 }) => (
-  <>
+  <div className="flex min-h-screen flex-col">
     <Header className="z-20" />
     <MenuDrawer className="z-10" />
-    <div className="pt-[80px]">
-      <Heading className="text-center">{pageTitle}</Heading>
-      <div className="mx-auto my-[32px] w-[90%] max-w-[800px]">{children}</div>
-      <Copyright className="block pb-[24px] text-center" />
+    <Heading className="pt-[80px] text-center">{pageTitle}</Heading>
+    <div className="mx-auto my-[32px] w-[90%] max-w-[800px] flex-1">
+      {children}
     </div>
-  </>
+    <Copyright className="block pb-[24px] text-center" />
+  </div>
 );

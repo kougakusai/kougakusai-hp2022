@@ -62,7 +62,8 @@ export const MenuDrawer = ({
         </li>
         {links.map(
           (link, i) =>
-            i !== 0 && (
+            i !== 0 &&
+            i !== 4 && (
               <li key={link.href}>
                 <p className="font-[Roboto] text-[1.5rem] font-bold leading-7 text-[#18283f] sm:text-[2.5rem] sm:leading-[3rem]">
                   {link.name}
@@ -70,6 +71,7 @@ export const MenuDrawer = ({
               </li>
             )
         )}
+        <MenuLink href={links[4].href}>{links[4].name}</MenuLink>
       </ul>
       <div className="mt-auto">
         <div className="mt-[40px] sm:mt-[120px]">
