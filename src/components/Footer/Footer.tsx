@@ -46,7 +46,10 @@ export const Footer = ({
         </SmallLink> */}
         <Small>感染症対策ガイドライン</Small>
       </div>
-      <LinkButton className="mt-[40px] bg-[#18283F] font-bold text-white">
+      <LinkButton
+        className="mt-[40px] bg-[#18283F] font-bold text-white"
+        href="/contact"
+      >
         お問い合わせ
       </LinkButton>
       <Copyright className="mt-[40px] block pb-[16px]" />
