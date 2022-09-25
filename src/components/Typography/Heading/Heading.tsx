@@ -8,7 +8,7 @@ export const Heading = ({
 }: ComponentPropsWithoutRef<'h1'>) => (
   <h1
     className={clsx(
-      'font-[Roboto] text-[24px] font-bold leading-[28px] text-[#18283f]',
+      'font-[Roboto] text-[1.5rem] font-bold leading-[1.75rem] text-[#18283f]',
       className
     )}
     {...restProps}
