@@ -4,12 +4,14 @@ import { Paragraph, Small } from 'components/Typography';
 export const NewsItem = ({
   date,
   category,
-  text,
+  title,
+  detail,
   ...restProps
 }: ComponentPropsWithoutRef<'div'> & {
   date: string;
   category: string;
-  text: string;
+  title: string;
+  detail?: string;
 }) => (
   <div {...restProps}>
     <div className="flex gap-[8px]">
@@ -17,6 +19,6 @@ export const NewsItem = ({
       <Small>|</Small>
       <Small>{category}</Small>
     </div>
-    <Paragraph className="mt-[8px]">{text}</Paragraph>
+    <Paragraph className="mt-[8px]">{title}</Paragraph>
   </div>
 );

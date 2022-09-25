@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import { Heading } from 'components/Typography';
 import { LinkButton } from 'components/Button';
 import { NewsItem } from '../NewsItem';
+import { newsData } from 'data';
 
 export const NewsList = ({
   children,
@@ -15,11 +16,14 @@ export const NewsList = ({
     {...restProps}
   >
     <Heading className="text-center">お知らせ</Heading>
-    {News.map((item) => (
-      <NewsItem key={item.date + item.text} className="mt-[24px]" {...item} />
+    {newsData.map((item) => (
+      <NewsItem key={item.date + item.title} className="mt-[24px]" {...item} />
     ))}
     <div className="flex justify-center">
-      <LinkButton className="mt-[24px] items-center border border-solid border-[#18283F] font-bold text-[#18283F]">
+      <LinkButton
+        href="/news"
+        className="mt-[24px] items-center border border-solid border-[#18283F] font-bold text-[#18283F]"
+      >
         もっと見る
       </LinkButton>
     </div>
@@ -33,11 +37,3 @@ export const NewsList = ({
     </div>
   </section>
 );
-
-const News = [
-  {
-    date: '2022/9/22',
-    category: 'その他',
-    text: 'トップページを更新しました。',
-  },
-];
