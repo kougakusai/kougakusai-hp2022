@@ -16,7 +16,7 @@ const Home: NextPageWithLayout = () => {
 
       <main>
         <Landing />
-        <NewsList className="m-[16px]" />
+        <NewsList id="お知らせ" className="m-[16px]" />
         <About className="mt-[80px]" />
         <SponsorList className="mt-[24px] h-[200px]" />
         <Footer />

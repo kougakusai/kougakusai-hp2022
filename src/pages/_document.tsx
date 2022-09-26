@@ -2,7 +2,7 @@ import { Head, Html, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html>
+    <Html className="scroll-smooth">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta charSet="utf-8" />
@@ -30,7 +30,7 @@ export default function Document() {
         />
       </Head>
 
-      <body className="bg-[#f0eeee]">
+      <body className="scroll-smooth bg-[#f0eeee]">
         <Main />
         <NextScript />
       </body>
