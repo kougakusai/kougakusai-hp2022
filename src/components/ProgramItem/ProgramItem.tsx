@@ -1,7 +1,6 @@
 import clsx from 'clsx';
-import { Heading } from 'components/Typography';
 import Image from 'next/image';
-import { ComponentPropsWithoutRef } from 'react';
+import { ComponentPropsWithoutRef, ReactNode } from 'react';
 
 const InsideChip = () => (
   <div
@@ -21,6 +20,17 @@ const StageChip = () => (
   </div>
 );
 
+type ProgramData = {
+  programName: string;
+  groupName: string;
+  place: 'inside' | 'stage';
+  introduction: string;
+  image?: string;
+  groupLink?: string;
+  twitter?: string;
+  instagram?: string;
+};
+
 export const ProgramItem = ({
   programName,
   groupName,
@@ -32,16 +42,7 @@ export const ProgramItem = ({
   instagram,
   className,
   ...restProps
-}: {
-  programName: string;
-  groupName: string;
-  place: 'inside' | 'stage';
-  introduction: string;
-  image?: string;
-  groupLink?: string;
-  twitter?: string;
-  instagram?: string;
-} & ComponentPropsWithoutRef<'div'>) => (
+}: ProgramData & ComponentPropsWithoutRef<'div'>) => (
   <div
     className={clsx(
       'inline-flex flex-col gap-y-2 rounded-lg bg-white p-4 font-[Roboto] text-[#18283F]',

@@ -91,6 +91,7 @@ export const MenuDrawer = ({
 const links = [
   { name: 'トップ', href: '/' },
   { name: 'こうがく祭について', href: '/about' },
+  { name: '企画一覧', href: '/program' },
   { name: 'タイムスケジュール', href: '/schedule' },
   { name: 'アクセス', href: '/access' },
   { name: 'お問い合わせ', href: '/contact' },
