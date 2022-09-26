@@ -29,7 +29,7 @@ export const RoundedButton = ({
   disabled,
   ...restProps
 }: { disabled?: boolean } & ComponentPropsWithoutRef<'a'>) => (
-  <Link href={href as unknown as Url}>
+  <Link href={href}>
     <a
       className={clsx(
         'group inline-flex h-[3.5rem] w-[14.5rem] select-none rounded-full bg-[#18283F] p-[0.125rem] sm:h-[5.75rem] sm:w-[29.25rem] sm:p-1',
