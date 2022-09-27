@@ -86,13 +86,6 @@ const 学内企画 = {
       image: '',
     },
     {
-      programName: '弾き語りライブ',
-      groupName: 'Folk Song Club',
-      place: 'ステージ',
-      introduction: `弾き語りライブします！見に来てね～～～！`,
-      image: '',
-    },
-    {
       programName: '模型飛行機を作って飛ばそう！',
       groupName: '航空技術研究会',
       place: 'E1棟周辺',
