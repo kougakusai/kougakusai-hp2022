@@ -1,7 +1,7 @@
 import type { NextPageWithLayout } from 'pages/_app';
 import Head from 'next/head';
 import { DefaultLayout } from 'components/Layouts/DefaultLayout';
-import { programDate } from 'data/program';
+import { programData } from 'data/program';
 import { ProgramItem } from 'components/ProgramItem';
 
 const Program: NextPageWithLayout = () => {
@@ -11,17 +11,14 @@ const Program: NextPageWithLayout = () => {
         <title>企画一覧 | 2022年度こうがく祭公式HP</title>
       </Head>
 
-      <main className="flex flex-col gap-6">
-        {programDate.map((program) => (
-          <ProgramItem
-            programName={program.programName}
-            groupName={program.groupName}
-            place={program.place as 'inside' | 'stage'}
-            introduction={program.introduction}
-            image={program.image}
-            groupLink={program.groupLink}
-            key={program.programName}
-          />
+      <main className="flex flex-col gap-y-4 divide-y-2">
+        {programData.map((program) => (
+          <section className="flex flex-col gap-6" key={program.variety}>
+            <h3>{program.variety}</h3>
+            {program.data.map((item) => (
+              <ProgramItem data={item} key={item.groupName} />
+            ))}
+          </section>
         ))}
       </main>
     </>

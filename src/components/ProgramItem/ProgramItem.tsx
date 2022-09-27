@@ -20,11 +20,25 @@ const StageChip = () => (
   </div>
 );
 
+const PlaceChip = ({ place }: { place: string }) => (
+  <div
+    className={clsx(
+      'h-6 select-none whitespace-nowrap rounded-full px-3 text-center text-base',
+      place === 'ステージ'
+        ? 'bg-[#DBEAFE] text-[#1D4ED8]'
+        : 'bg-[#DCFCE7] text-[#16A34A]'
+    )}
+    title={`開催場所：${place}`}
+  >
+    {place}
+  </div>
+);
+
 type ProgramData = {
   programName: string;
   groupName: string;
-  place: 'inside' | 'stage';
-  introduction: string;
+  place: string;
+  introduction?: ReactNode;
   image?: string;
   groupLink?: string;
   twitter?: string;
@@ -32,17 +46,10 @@ type ProgramData = {
 };
 
 export const ProgramItem = ({
-  programName,
-  groupName,
-  place,
-  introduction,
-  image,
-  groupLink,
-  twitter,
-  instagram,
+  data,
   className,
   ...restProps
-}: ProgramData & ComponentPropsWithoutRef<'div'>) => (
+}: { data: ProgramData } & ComponentPropsWithoutRef<'div'>) => (
   <div
     className={clsx(
       'inline-flex flex-col gap-y-2 rounded-lg bg-white p-4 font-[Roboto] text-[#18283F]',
@@ -51,47 +58,58 @@ export const ProgramItem = ({
     {...restProps}
   >
     <div className="flex justify-between gap-x-2">
-      <h3
+      <h4
         className="overflow-hidden text-ellipsis whitespace-nowrap text-base font-bold"
-        title={programName}
+        title={data.programName}
       >
-        {programName}
-      </h3>
-      {place === 'inside' ? <InsideChip /> : <StageChip />}
+        {data.programName}
+      </h4>
+      {/* {place === 'inside' ? <InsideChip /> : <StageChip />} */}
+      <PlaceChip place={data.place} />
     </div>
-    {groupLink ? (
+    {data.groupLink ? (
       <a
-        href={groupLink}
-        title={`${groupName}のサイトへ`}
+        href={data.groupLink}
+        title={`${data.groupName}のサイトへ`}
         target="_blank"
         className="underline"
         rel="noreferrer"
       >
-        <h4 className="overflow-hidden text-ellipsis whitespace-nowrap">
-          {groupName}
-        </h4>
+        <h5 className="overflow-hidden text-ellipsis whitespace-nowrap">
+          {data.groupName}
+        </h5>
       </a>
     ) : (
-      <h4 className="overflow-hidden text-ellipsis whitespace-nowrap">
-        {groupName}
-      </h4>
+      <h5 className="overflow-hidden text-ellipsis whitespace-nowrap">
+        {data.groupName}
+      </h5>
     )}
-    {image && (
+    {data.image && (
       <div className="h-[3.75rem]">
         <Image
-          src={image}
-          alt={programName}
+          src={data.image}
+          alt={data.programName}
           width={90}
           height={60}
           layout="fixed"
         />
       </div>
     )}
-    <p className="overflow-hidden text-ellipsis">{introduction}</p>
+
+    {typeof data.introduction === 'string' ? (
+      <p className="overflow-hidden text-ellipsis whitespace-pre-wrap">
+        {data.introduction}
+      </p>
+    ) : (
+      <div className="overflow-hidden text-ellipsis whitespace-pre-wrap">
+        {data.introduction}
+      </div>
+    )}
+
     <div className="flex items-center justify-end gap-x-4">
-      {instagram && (
+      {data.instagram && (
         <a
-          href={instagram}
+          href={data.instagram}
           target="_blank"
           className="inline-flex h-10 w-10 items-center justify-center text-black"
           rel="noreferrer"
@@ -99,9 +117,9 @@ export const ProgramItem = ({
           <InstagramIcon />
         </a>
       )}
-      {twitter && (
+      {data.twitter && (
         <a
-          href={twitter}
+          href={data.twitter}
           target="_blank"
           className="inline-flex h-10 w-10 items-center justify-center text-black"
           rel="noreferrer"
