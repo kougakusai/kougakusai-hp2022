@@ -61,7 +61,7 @@ const 学内企画 = {
       image: '',
     },
     {
-      programName: 'フィルクローレの風',
+      programName: 'フォルクローレの風',
       groupName: '中南米音楽研究会日立支部',
       place: 'ステージ',
       image: '',
