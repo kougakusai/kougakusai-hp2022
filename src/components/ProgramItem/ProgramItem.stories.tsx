@@ -17,20 +17,23 @@ const Template: ComponentStory<typeof ProgramItem> = (args) => (
 
 export const BaseProgramItem = Template.bind({});
 BaseProgramItem.args = {
-  programName: '企画のタイトル',
-  groupName: '団体の名前',
-  place: 'inside',
-  introduction: 'これは紹介文。いろはにほへとちりぬるを',
-  image: '',
-  groupLink: '',
+  data: {
+    programName: '企画のタイトル',
+    groupName: '団体の名前',
+    place: 'inside',
+    introduction: 'これは紹介文。いろはにほへとちりぬるを',
+    image: '',
+    groupLink: '',
+  },
 };
 
 export const FullProgramItem = Template.bind({});
 FullProgramItem.args = {
-  programName: '企画のタイトル',
-  groupName: 'リンクがある団体の名前',
-  place: 'stage',
-  introduction: `これは紹介文。
+  data: {
+    programName: '企画のタイトル',
+    groupName: 'リンクがある団体の名前',
+    place: 'stage',
+    introduction: `これは紹介文。
 いろはにほへと　ちりぬるを
 わかよたれそ　つねならむ
 うゐのおくやま　けふこえて
@@ -39,8 +42,9 @@ FullProgramItem.args = {
 我が世誰ぞ　常ならむ
 有為の奥山　今日越えて
 浅き夢見じ　酔ひもせず`,
-  image: SampleImage,
-  groupLink: 'https://example.com/',
-  twitter: 'https://twitter.com/Twitter/',
-  instagram: 'https://www.instagram.com/instagram/',
+    image: SampleImage,
+    groupLink: 'https://example.com/',
+    twitter: 'https://twitter.com/Twitter/',
+    instagram: 'https://www.instagram.com/instagram/',
+  },
 };
