@@ -63,7 +63,8 @@ export const MenuDrawer = ({
         {links.map(
           (link, i) =>
             i !== 0 &&
-            i !== 4 && (
+            i !== 2 &&
+            i !== 5 && (
               <li key={link.href}>
                 <p className="font-[Roboto] text-[1.5rem] font-bold leading-7 text-[#18283f] sm:text-[2.5rem] sm:leading-[3rem]">
                   {link.name}
@@ -71,7 +72,12 @@ export const MenuDrawer = ({
               </li>
             )
         )}
-        <MenuLink href={links[4].href}>{links[4].name}</MenuLink>
+        <li>
+          <MenuLink href={links[2].href}>{links[2].name}</MenuLink>
+        </li>
+        <li>
+          <MenuLink href={links[5].href}>{links[5].name}</MenuLink>
+        </li>
       </ul>
       <div className="mt-auto">
         <div className="mt-[40px] sm:mt-[120px]">
@@ -91,6 +97,7 @@ export const MenuDrawer = ({
 const links = [
   { name: 'トップ', href: '/' },
   { name: 'こうがく祭について', href: '/about' },
+  { name: '企画一覧', href: '/program' },
   { name: 'タイムスケジュール', href: '/schedule' },
   { name: 'アクセス', href: '/access' },
   { name: 'お問い合わせ', href: '/contact' },
