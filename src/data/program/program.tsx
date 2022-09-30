@@ -7,7 +7,7 @@ const committee = {
       programName: 'こうがく祭実行委員会企画',
       groupName: 'こうがく祭実行委員会',
       place: 'E1棟',
-      introduction: `こうがく祭実行委員で行う企画として、今年は4つをやる予定です！
+      introduction: `こうがく祭実行委員で行う企画として、今年は5つをやる予定です！
 ぜひお越しください！`,
       image: '',
     },
