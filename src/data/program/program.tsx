@@ -138,7 +138,7 @@ const 教員企画 = {
 【対象年齢】10歳～大人※付き添いがあれば9歳以下のお子さんでも大丈夫です
 【その他】参加無料基本形の工作は15分程度`,
       image: '',
-      groupLink: 'https://youtu.be/SwWtYg4iYvw',
+      groupLink: 'http://hfy-lab.eng.ibaraki.ac.jp/wirecraft/',
     },
     {
       programName: 'かがくであそぼ2022',
