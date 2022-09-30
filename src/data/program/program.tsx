@@ -23,6 +23,12 @@ const school = {
       introduction: `４つの作業班で作製した製品、野菜を販売いたします。よろしくお願いします。 `,
       groupLink: 'https://www.city.hitachi.lg.jp/shien/',
     },
+    {
+      programName: '放課後かくかくしかじか',
+      groupName: '日立第二高等学校演劇部',
+      place: 'ステージ',
+      introduction: ``, // TODO 時間調整中
+    },
   ],
 };
 const withinCampus = {
