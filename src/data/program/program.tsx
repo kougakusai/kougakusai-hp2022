@@ -1,6 +1,6 @@
 import React from 'react';
 
-const こうがく祭実行委員会企画 = {
+const committee = {
   variety: 'こうがく祭実行委員会企画',
   data: [
     {
@@ -13,7 +13,7 @@ const こうがく祭実行委員会企画 = {
     },
   ],
 };
-const 学校企画 = {
+const school = {
   variety: '学校企画',
   data: [
     {
@@ -25,7 +25,7 @@ const 学校企画 = {
     },
   ],
 };
-const 学内企画 = {
+const withinCampus = {
   variety: '学内企画',
   data: [
     {
@@ -101,7 +101,7 @@ const 学内企画 = {
     },
   ],
 };
-const 技術部企画 = {
+const engineeringDepart = {
   variety: '技術部企画',
   data: [
     {
@@ -116,7 +116,7 @@ const 技術部企画 = {
     },
   ],
 };
-const 教員企画 = {
+const teacher = {
   variety: '教員企画',
   data: [
     {
@@ -216,24 +216,24 @@ const 教員企画 = {
   ],
 };
 
-const tmp = {
-  variety: '',
-  data: [
-    {
-      programName: '',
-      groupName: '',
-      place: '',
-      introduction: ``,
-      image: '',
-      groupLink: '',
-    },
-  ],
-};
+// const tmp = {
+//   variety: '',
+//   data: [
+//     {
+//       programName: '',
+//       groupName: '',
+//       place: '',
+//       introduction: ``,
+//       image: '',
+//       groupLink: '',
+//     },
+//   ],
+// };
 
 export const programData = [
-  こうがく祭実行委員会企画,
-  学校企画,
-  学内企画,
-  技術部企画,
-  教員企画,
+  committee,
+  school,
+  withinCampus,
+  engineeringDepart,
+  teacher,
 ];
