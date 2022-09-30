@@ -1,19 +1,19 @@
 import React from 'react';
 
-const こうがく祭実行委員会企画 = {
+const committee = {
   variety: 'こうがく祭実行委員会企画',
   data: [
     {
       programName: 'こうがく祭実行委員会企画',
       groupName: 'こうがく祭実行委員会',
       place: 'E1棟',
-      introduction: `こうがく祭実行委員で行う企画として、今年は以下の4つをやる予定です！
+      introduction: `こうがく祭実行委員で行う企画として、今年は5つをやる予定です！
 ぜひお越しください！`,
       image: '',
     },
   ],
 };
-const 学校企画 = {
+const school = {
   variety: '学校企画',
   data: [
     {
@@ -25,7 +25,7 @@ const 学校企画 = {
     },
   ],
 };
-const 学内企画 = {
+const withinCampus = {
   variety: '学内企画',
   data: [
     {
@@ -77,7 +77,7 @@ const 学内企画 = {
       groupName: '茨城大学生協学生委員会',
       place: 'E1棟周辺',
       introduction: `握力測定やアルコールパッチテストを行います！
-      ぜひ遊びに来て下さい！`,
+ぜひ遊びに来て下さい！`,
     },
     {
       programName: '作品展示会',
@@ -101,7 +101,7 @@ const 学内企画 = {
     },
   ],
 };
-const 技術部企画 = {
+const engineeringDepart = {
   variety: '技術部企画',
   data: [
     {
@@ -116,7 +116,7 @@ const 技術部企画 = {
     },
   ],
 };
-const 教員企画 = {
+const teacher = {
   variety: '教員企画',
   data: [
     {
@@ -124,9 +124,28 @@ const 教員企画 = {
       groupName:
         '茨城大学工学部子供ラジオ作りチャレンジ教室の会(代表孫冉、後援日立市教育委員会)',
       place: 'E3棟 2階 201実験室',
-      introduction: `小学生(4ー6年)を対象に、ものづくりの面白さを知ってもらうと共に、科学技術に興味を持ってもらうことを狙いとして、仕組みが簡単で、原理も簡単に理解できるFMトランジスタラジオのキットを自分の手で作ってもらいます。本学の教職員・学生が懇切丁寧に工作指導をします。`,
+      introduction: (
+        <>
+          小学生(4ー6年)を対象に、ものづくりの面白さを知ってもらうと共に、科学技術に興味を持ってもらうことを狙いとして、仕組みが簡単で、原理も簡単に理解できるFMトランジスタラジオのキットを自分の手で作ってもらいます。本学の教職員・学生が懇切丁寧に工作指導をします。
+          <br />
+          定員：10名
+          <br />
+          参加資格：小学校4年以上、9月28日(水)より先着順で受け付けます
+          <br />
+          申し込み〆切：令和4年10月21日(金)
+          <br />
+          <a
+            href="https://forms.office.com/r/eCuewrTabR/"
+            title="Formsで申し込みをする"
+            className="underline"
+            target="_blank"
+            rel="noreferrer"
+          >
+            申し込みはこちら
+          </a>
+        </>
+      ),
       image: '',
-      groupLink: 'https://forms.office.com/r/eCuewrTabR/',
     },
     {
       programName: '1本のワイヤーで作る錯覚アート工作教室',
@@ -138,7 +157,7 @@ const 教員企画 = {
 【対象年齢】10歳～大人※付き添いがあれば9歳以下のお子さんでも大丈夫です
 【その他】参加無料基本形の工作は15分程度`,
       image: '',
-      groupLink: 'https://youtu.be/SwWtYg4iYvw',
+      groupLink: 'http://hfy-lab.eng.ibaraki.ac.jp/wirecraft/',
     },
     {
       programName: 'かがくであそぼ2022',
@@ -147,8 +166,11 @@ const 教員企画 = {
       introduction: (
         <>
           参加方法：当日現地に直接お越し下さい。整理券を配布します。
+          <br />
           整理券配布予定時刻 9:30, 11:30, 13:30
+          <br />
           この企画では色々な実験を行って頂くことで、科学の面白さを実感できる体験コースを提供致します。
+          <br />
           <ul className="list-inside list-disc">
             <li>色が変わるビーズでストラップを作ろう！</li>
             <li>プラバンでキーホルダーを作ろう！</li>
@@ -156,13 +178,14 @@ const 教員企画 = {
             <li>タンパク質の結晶を作ってみよう！</li>
           </ul>
           などなど、10分程度で体験できる科学実験が揃っています。
+          <br />
           幼稚園～小学生の方でも安全にお楽しみ頂けるよう、学科の教員と大学生・大学院生が指導いたします。
+          <br />
           教員・学生一同、皆様のご来場をお待ちしています。
         </>
       ),
       image: '',
-      groupLink:
-        'http://www.msae.ibaraki.ac.jp/こうがく祭で「がかくであそぼ」を開催/',
+      // groupLink: 'http://www.msae.ibaraki.ac.jp/こうがく祭で「がかくであそぼ」を開催/',  TODO リンク先確認
     },
     {
       programName: '指輪づくり体験',
@@ -208,24 +231,24 @@ const 教員企画 = {
   ],
 };
 
-const tmp = {
-  variety: '',
-  data: [
-    {
-      programName: '',
-      groupName: '',
-      place: '',
-      introduction: ``,
-      image: '',
-      groupLink: '',
-    },
-  ],
-};
+// const tmp = {
+//   variety: '',
+//   data: [
+//     {
+//       programName: '',
+//       groupName: '',
+//       place: '',
+//       introduction: ``,
+//       image: '',
+//       groupLink: '',
+//     },
+//   ],
+// };
 
 export const programData = [
-  こうがく祭実行委員会企画,
-  学校企画,
-  学内企画,
-  技術部企画,
-  教員企画,
+  committee,
+  school,
+  withinCampus,
+  engineeringDepart,
+  teacher,
 ];
