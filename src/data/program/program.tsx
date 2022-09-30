@@ -161,8 +161,7 @@ const 教員企画 = {
         </>
       ),
       image: '',
-      groupLink:
-        'http://www.msae.ibaraki.ac.jp/こうがく祭で「がかくであそぼ」を開催/',
+      // groupLink: 'http://www.msae.ibaraki.ac.jp/こうがく祭で「がかくであそぼ」を開催/',  TODO リンク先確認
     },
     {
       programName: '指輪づくり体験',
