@@ -95,16 +95,9 @@ export const ProgramItem = ({
         />
       </div>
     )}
-
-    {typeof data.introduction === 'string' ? (
-      <p className="overflow-hidden text-ellipsis whitespace-pre-wrap">
-        {data.introduction}
-      </p>
-    ) : (
-      <div className="overflow-hidden text-ellipsis whitespace-pre-wrap">
-        {data.introduction}
-      </div>
-    )}
+    <div className="overflow-hidden text-ellipsis whitespace-pre-line">
+      {data.introduction}
+    </div>
 
     <div className="flex items-center justify-end gap-x-4">
       {data.instagram && (

@@ -127,11 +127,21 @@ const teacher = {
       introduction: (
         <>
           小学生(4ー6年)を対象に、ものづくりの面白さを知ってもらうと共に、科学技術に興味を持ってもらうことを狙いとして、仕組みが簡単で、原理も簡単に理解できるFMトランジスタラジオのキットを自分の手で作ってもらいます。本学の教職員・学生が懇切丁寧に工作指導をします。
+          <br />
           定員：10名
+          <br />
           参加資格：小学校4年以上、9月28日(水)より先着順で受け付けます
+          <br />
           申し込み〆切：令和4年10月21日(金)
-          <a href="https://forms.office.com/r/eCuewrTabR/">
-            申し込みは、こちら
+          <br />
+          <a
+            href="https://forms.office.com/r/eCuewrTabR/"
+            title="Formsで申し込みをする"
+            className="underline"
+            target="_blank"
+            rel="noreferrer"
+          >
+            申し込みはこちら
           </a>
         </>
       ),
