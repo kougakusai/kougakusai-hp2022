@@ -237,6 +237,386 @@ const teacher = {
   ],
 };
 
+const openLabMechsys = {
+  variety: '研究室公開（機械システム工学科）',
+  data: [
+    {
+      programName: '車田研究室',
+      groupName: '',
+      place: 'W1棟 204a室',
+      introduction:
+        '水素貯蔵タンク材料や核融合炉用耐熱材料などについて展示及び説明',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '倉本・小林研究室',
+      groupName: '',
+      place: 'W1棟 107室',
+      introduction:
+        '自動車などのカーボンニュートラルを支える高強度金属材料についての研究紹介',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '道辻研究室',
+      groupName: '',
+      place: 'W1棟 203室',
+      introduction: '鉄道車両に関する研究、実験装置の展示',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '小貫研究室',
+      groupName: '',
+      place: 'E3棟 318室',
+      introduction:
+        '3Dスキャナ、デプスカメラ、近赤外カメラ、サーモグラフィカメラ、偏光カメラ、高速度カメラのデモ・加工したウエハ表面評価の研究紹介',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '梅津研究室',
+      groupName: '',
+      place: 'E2棟 408室',
+      introduction:
+        '床プロジェクション、物体に映像が追従するタンジブル学習、非接触クイズマシン、メディアアート（文字モザイク）などの体験',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '増澤・長・北山研究室',
+      groupName: '',
+      place: 'E5棟 302室',
+      introduction: '（教員企画）浮いて回る時期浮上型人工心臓',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '金野・田中・酒井・境田研究室',
+      groupName: '',
+      place: 'W4棟 内燃実験室',
+      introduction:
+        'カーボンニュートラルを実現するための先進エンジンシステムや、次世代燃料研究について紹介します。実験に用いている実機エンジンや燃料電池も紹介！！',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '伊藤研究室',
+      groupName: '',
+      place: 'W1棟 304a室',
+      introduction: 'レーザマーカによるストラップ製作・鏡面研削加工の紹介',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '計算工学研究室',
+      groupName: '',
+      place: 'E2棟 404室',
+      introduction: '研究内容のパネル展示（パネル展示は4F廊下）',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '森研究室',
+      groupName: '',
+      place: 'E2棟 205室',
+      introduction: '介助福祉に役立つメカトロ機器を中心とした研究紹介',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '周・尾嶌研究室',
+      groupName: '',
+      place: 'E3棟 107N室',
+      introduction: 'ウエハ加工関連、3次元計測について研究紹介',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: 'CFD研究室',
+      groupName: '',
+      place: 'W1棟 403a室',
+      introduction:
+        '流体のシミュレーションと津波の仮想体験システムについて紹介',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '長山研究室',
+      groupName: '',
+      place: 'E2棟 301室',
+      introduction:
+        'マイクロ・ナノバイオメカニクス「医療応用を目指した細胞工学技術の紹介」',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '清水（淳）・金子研究室',
+      groupName: '',
+      place: 'E3棟 208室',
+      introduction:
+        'シミュレーションを駆使し原子摩擦や切削加工を科学する研究の紹介',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '知能システム制御研究室',
+      groupName: '',
+      place: 'E3棟 301室 307室',
+      introduction:
+        'お花を描く二軸ロボットマニピュレータの制御、倒立走行ロボットの制御、三重水槽の水位制御、タワークレーンの制振制御、人工知能ロボットによる画像認識',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '福岡研究室',
+      groupName: '',
+      place: 'E3棟 312室',
+      introduction: '4足ロボットと蛇ロボットに関する研究の紹介',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '数理生命科学研究室研究室',
+      groupName: '',
+      place: 'E2棟 401室',
+      introduction:
+        '「物理学」と「情報科学」の理論の接点 研究内容のポスター展示（展示は3F廊下）',
+      image: '',
+      groupLink: '',
+    },
+  ],
+};
+
+const openLabEes = {
+  variety: '研究室公開（電気電子システム工学科）',
+  data: [
+    {
+      programName: '人間情報工学研究室',
+      groupName: '矢内浩文',
+      place: 'E5棟 501室',
+      introduction: `【企画1】1000分の1秒単位で早押し能力を精密測定——手と足はどっちが素早い？
+【企画2】錯覚ワイヤークラフト工作教室（参加無料）`,
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '電磁波システム研究室',
+      groupName: '武田、孫',
+      place: 'E5棟 4F廊下',
+      introduction: `電磁波システム研究室
+・光無線システムによるデータ送受信装置
+・土中での水の移動検出装置
+・火災検知と避難経路システム（2022年度講義 組み込みシステム実践基礎の成果物展示）
+・赤外線センサを用いた夜間の警備システム（2022年度講義 組み込みシステム実践基礎の成果物展示）`,
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '島影尚',
+      groupName: '',
+      place: 'E6棟 302室',
+      introduction: '超電導エレクトロニクスの研究内容の紹介',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: 'モータードライブ研究室',
+      groupName: '岩路善尚',
+      place: 'E6棟 201室',
+      introduction: 'モータの最新制御技術',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '複雑系システム制御研究室',
+      groupName: '杉谷栄規',
+      place: 'E3棟 204室',
+      introduction:
+        '物事が互いにやり取りすることで生じる「同期現象」の紹介展示。通信信号処理研究室と合同展示を企画。',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '通信信号処理研究室',
+      groupName: '宮嶋照行',
+      place: 'E3棟 204室',
+      introduction: '次世代ワイヤレス通信の技術',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: 'ナノエレクトロニクス研究室',
+      groupName: '青野友祐',
+      place: 'E2棟 710室',
+      introduction: '小さくすると見えてくるエレクトロニクスの世界',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: 'エネルギーシステム研究室',
+      groupName: '田中正志',
+      place: 'E2棟 610室',
+      introduction: `（1）太陽光発電システムのメンテナンス手法
+→キセノンフラッシュランプとキャパシタを利用した診断法の研究紹介
+（2）リチウムイオン電池のリサイクル
+→大気圧高電圧パルス放電を利用した電池正極部材回収法の研究紹介
+→数値流体解析（CFD）と離散要素解析（DEM）の連成計算による回収シミュレーション`,
+      image: '',
+      groupLink: '',
+    },
+  ],
+};
+
+const openLabMsae = {
+  variety: '研究室公開（物質科学工学科）',
+  data: [
+    {
+      programName: '小林芳男',
+      groupName: '',
+      place: 'N6棟 207室',
+      introduction:
+        '研究室紹介パネルを用いて研究内容を説明します。また、ナノ粒子を液体中で合成する際に使用する装置をお見せします。',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '池田輝之',
+      groupName: '',
+      place: 'W3棟 107室',
+      introduction: `熱から電気をつくろう。
+熱から電気をつくる材料を使って、電気をつくる体験をして頂きます。`,
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '近藤健',
+      groupName: '',
+      place: 'N6棟 107室',
+      introduction:
+        '有機化学の研究開発や光化学の面白さを、実験室見学を通して説明します',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '佐藤成男',
+      groupName: '',
+      place: 'W3棟 103室 404室',
+      introduction:
+        '硬貨の中の結晶欠陥のレクチャーし、それを評価する装置の紹介します',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '田中伊知郎',
+      groupName: '',
+      place: 'N1棟 201室',
+      introduction:
+        '1/6モデルのJ-PARCタンパク質回折装置の展示と関連する研究を紹介します。',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '倉持昌弘',
+      groupName: '',
+      place: 'N2棟 106b室',
+      introduction:
+        'モデル動物線虫を顕微鏡観察しながら、私たちが取り組む生命科学研究について紹介します。',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '木村成伸',
+      groupName: '',
+      place: 'N2棟 207A室 206A室 206B室 201B室 101B室 107室',
+      introduction:
+        '遺伝子組換え実験やたんぱく質の精製・機能解析に用いる研究設備や装置を見学してもらい、研究内容をわかりやすく説明します。',
+      image: '',
+      groupLink: '',
+    },
+  ],
+};
+
+const openLabCis = {
+  variety: '研究室公開（情報工学科）',
+  data: [
+    {
+      programName: '上田・高橋・原口・堀田研究室',
+      groupName: '',
+      place: 'S1棟 102室',
+      introduction: '社会を支えるソフトウェアシステムの作り方',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '鎌田研究室',
+      groupName: '',
+      place: 'S1棟 1Fラウンジ',
+      introduction:
+        'オリジナルの子供向けプログラミング言語によるビデオゲーム制作',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '新納・佐々木研究室',
+      groupName: '',
+      place: 'S1棟 2F廊下',
+      introduction: 'ディープラーニングによる自然言語処理',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '外岡研究室',
+      groupName: '',
+      place: 'S1棟 201室',
+      introduction: 'リモートセンシング&地理空間情報工学の研究紹介',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '小澤・羽渕・大瀧・野口研究室',
+      groupName: '',
+      place: 'S1棟 102室',
+      introduction: '可視光を用いた光ワイヤレス通信',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '藤芳・宮本研究室',
+      groupName: '',
+      place: 'S1棟 102室',
+      introduction: '小中学生向けユニバーサルデザイン教科書の紹介',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '米山・品川研究室',
+      groupName: '',
+      place: 'S1棟 201室',
+      introduction: '見て触って体験する暗号プロトコル',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '岡田・笹井研究室',
+      groupName: '',
+      place: 'S1棟 2F廊下',
+      introduction: 'データベース学習支援システムの紹介',
+      image: '',
+      groupLink: '',
+    },
+    {
+      programName: '柴田研究室',
+      groupName: '',
+      place: 'S1棟 1Fラウンジ',
+      introduction: 'VRによる「伝承支援」「見える化」技術の体験',
+      image: '',
+      groupLink: '',
+    },
+  ],
+};
+
 // const tmp = {
 //   variety: '',
 //   data: [
@@ -257,4 +637,8 @@ export const programData = [
   withinCampus,
   engineeringDepart,
   teacher,
+  openLabMechsys,
+  openLabEes,
+  openLabMsae,
+  openLabCis,
 ];
