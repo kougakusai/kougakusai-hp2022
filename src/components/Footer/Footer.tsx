@@ -18,11 +18,19 @@ export const Footer = ({
       className={clsx('rounded-t-[48px] bg-white text-center', className)}
       {...restProps}
     >
-      <Heading className="pt-[32px]">SHARE</Heading>
+      <Heading className="pt-[32px]">SNS</Heading>
       <div className="mt-[24px] flex justify-center gap-[24px]">
-        <TwitterIcon />
-        <InstagramIcon />
-        <YoutubeIcon />
+        {SNSLinks.map(({ name, href, icon }) => (
+          <a
+            href={href}
+            key={name}
+            rel="noopener noreferrer"
+            target="_blank"
+            title={'こうがく祭公式' + name}
+          >
+            {icon}
+          </a>
+        ))}
         <CopyButton />
       </div>
       <div className="mt-[48px]">
@@ -57,3 +65,21 @@ export const Footer = ({
     </div>
   );
 };
+
+const SNSLinks = [
+  {
+    name: 'Twitter',
+    href: 'https://twitter.com/kougakufes',
+    icon: <TwitterIcon />,
+  },
+  {
+    name: 'Instagram',
+    href: 'https://www.instagram.com/kougakufes/',
+    icon: <InstagramIcon />,
+  },
+  {
+    name: 'YouTube',
+    href: 'https://www.youtube.com/channel/UC8yEgipIcHHSkRlTLcm4tBw',
+    icon: <YoutubeIcon />,
+  },
+];
