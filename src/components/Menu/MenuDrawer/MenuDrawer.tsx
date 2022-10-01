@@ -67,9 +67,11 @@ export const MenuDrawer = ({
             i !== 2 &&
             i !== 5 && (
               <li key={link.href}>
-                <p className="font-[Roboto] text-[1.5rem] font-bold leading-7 text-[#18283f] sm:text-[2.5rem] sm:leading-[3rem]">
-                  {link.name}
-                </p>
+                <del>
+                  <p className="font-[Roboto] text-[1.5rem] font-bold leading-7 text-[#18283f] sm:text-[2.5rem] sm:leading-[3rem]">
+                    {link.name}
+                  </p>
+                </del>
               </li>
             )
         )}
