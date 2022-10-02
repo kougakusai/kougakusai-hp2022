@@ -29,7 +29,7 @@ export const BusTimeTable = ({
           茨大前（日立）へは約10分 片道260円
         </p>
         <table className="divide-y divide-double divide-black text-center">
-          <thead className="whitespace-nowrap text-sm">
+          <thead className="text-sm">
             <tr>
               {busTimeTable.hitachi.head.map((data, index) => (
                 <th key={index}>{data}</th>
@@ -55,7 +55,7 @@ export const BusTimeTable = ({
           茨大前（日立）へは約8分 片道220円
         </p>
         <table className="divide-y divide-double divide-black text-center">
-          <thead className="whitespace-nowrap text-sm">
+          <thead className="text-sm">
             <tr>
               {busTimeTable.taga.head.map((data, index) => (
                 <th key={index}>{data}</th>
