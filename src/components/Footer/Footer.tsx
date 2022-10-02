@@ -7,6 +7,7 @@ import { useMobileView } from 'hooks/useMobileView';
 import { LinkButton } from 'components/Button';
 import { InstagramIcon, TwitterIcon, YoutubeIcon } from 'components/Icon';
 import { CopyButton } from 'components/Button/CopyButton';
+import { FacebookIcon } from 'components/Icon/FacebookIcon';
 
 export const Footer = ({
   className,
@@ -14,26 +15,46 @@ export const Footer = ({
 }: ComponentPropsWithoutRef<'div'>) => {
   const isMobile = useMobileView();
   return (
-    <div
-      className={clsx('rounded-t-[48px] bg-white text-center', className)}
+    <footer
+      className={clsx(
+        'rounded-t-[48px] bg-white pt-6 pb-4 text-center',
+        className
+      )}
       {...restProps}
     >
-      <Heading className="pt-[32px]">SNS</Heading>
-      <div className="mt-[24px] flex justify-center gap-[24px]">
-        {SNSLinks.map(({ name, href, icon }) => (
-          <a
-            href={href}
-            key={name}
-            rel="noopener noreferrer"
-            target="_blank"
-            title={'こうがく祭公式' + name}
-          >
-            {icon}
-          </a>
-        ))}
-        <CopyButton />
-      </div>
-      <div className="mt-[48px]">
+      <section className="flex flex-col gap-y-6">
+        <Heading>こうがく祭公式SNS</Heading>
+        <div className="flex justify-center gap-x-6">
+          {SNSLinks.map(({ name, href, icon }) => (
+            <a
+              href={href}
+              key={name}
+              rel="noopener noreferrer"
+              target="_blank"
+              title={'こうがく祭公式' + name}
+            >
+              {icon}
+            </a>
+          ))}
+          <CopyButton />
+        </div>
+        {/* TODO: embed twitter timeline */}
+        <Heading>茨城大学工学部公式SNS</Heading>
+        <div className="flex h-10 justify-center gap-x-6">
+          {CoESNSLinks.map(({ name, href, icon }) => (
+            <a
+              href={href}
+              title={'茨城大学工学部公式' + name}
+              rel="noopener noreferrer"
+              target="_blank"
+              key={name}
+            >
+              {icon}
+            </a>
+          ))}
+        </div>
+      </section>
+      <div className="mt-6">
         <Image
           src="/kougakusai_banner.png"
           alt="こうがく祭バナー"
@@ -67,8 +88,8 @@ export const Footer = ({
       >
         お問い合わせ
       </LinkButton>
-      <Copyright className="mt-[40px] block pb-[16px]" />
-    </div>
+      <Copyright className="mt-[40px] block" />
+    </footer>
   );
 };
 
@@ -87,5 +108,17 @@ const SNSLinks = [
     name: 'YouTube',
     href: 'https://www.youtube.com/channel/UC8yEgipIcHHSkRlTLcm4tBw',
     icon: <YoutubeIcon />,
+  },
+];
+const CoESNSLinks = [
+  {
+    name: 'Instagram',
+    href: 'https://www.instagram.com/ibarakiuniversityhitachi/',
+    icon: <InstagramIcon />,
+  },
+  {
+    name: 'Facebook',
+    href: 'https://www.facebook.com/ibarakiUnivEng/',
+    icon: <FacebookIcon />,
   },
 ];
