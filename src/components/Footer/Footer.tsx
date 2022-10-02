@@ -24,7 +24,7 @@ export const Footer = ({
     >
       <section className="flex flex-col gap-y-6">
         <Heading>こうがく祭公式SNS</Heading>
-        <div className="flex justify-center gap-x-6">
+        <div className="flex h-10 justify-center gap-x-6">
           {SNSLinks.map(({ name, href, icon }) => (
             <a
               href={href}
