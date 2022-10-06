@@ -10,7 +10,10 @@ const H2 = ({
   className,
   ...restProps
 }: ComponentPropsWithoutRef<'h2'>) => (
-  <h2 className={clsx('mb-2 font-bold', className)} {...restProps}>
+  <h2
+    className={clsx('mb-2 font-[Roboto] font-bold', className)}
+    {...restProps}
+  >
     {children}
   </h2>
 );
@@ -63,7 +66,7 @@ const SitePolicy: NextPageWithLayout = () => (
           ただし、以下の注意事項に該当するか、もしくはその恐れがあるウェブサイトからのリンクは固くお断りいたします。以下に該当しない場合でも、リンク設定方法の変更やリンク削除をお願いする場合があります。
         </Paragraph>
         <br />
-        <ul className="list-inside list-disc">
+        <ul className="list-inside list-disc font-[Roboto] text-[#18283F]">
           <li>誹謗中傷や信用失墜を意図する内容を含んだサイト</li>
           <li>
             アダルトコンテンツを含んだサイト
