@@ -65,6 +65,7 @@ export const MenuDrawer = ({
           (link, i) =>
             i !== 0 &&
             i !== 2 &&
+            i !== 4 &&
             i !== 5 && (
               <li key={link.href}>
                 <del>
@@ -77,6 +78,9 @@ export const MenuDrawer = ({
         )}
         <li>
           <MenuLink href={links[2].href}>{links[2].name}</MenuLink>
+        </li>
+        <li>
+          <MenuLink href={links[4].href}>{links[4].name}</MenuLink>
         </li>
         <li>
           <MenuLink href={links[5].href}>{links[5].name}</MenuLink>

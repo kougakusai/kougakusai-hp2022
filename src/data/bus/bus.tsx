@@ -3,17 +3,17 @@ export const busTimeTable = {
     head: [
       '',
       <>
-        &ensp;バス発車時刻&ensp;
+        バス発車時刻&ensp;
         <wbr />
         ＊印は臨時便
       </>,
       <>
-        &ensp;茨大前（日立）&ensp;
+        茨大前（日立）&ensp;
         <wbr />
         通過予定時刻
       </>,
       <>
-        &ensp;多賀駅前&ensp;
+        多賀駅前&ensp;
         <wbr />
         到着予定時刻
       </>,
@@ -43,17 +43,17 @@ export const busTimeTable = {
     head: [
       '',
       <>
-        &ensp;バス発車時刻&ensp;
+        バス発車時刻&ensp;
         <wbr />
         ＊印は臨時便
       </>,
       <>
-        &ensp;茨大前（日立）&ensp;
+        茨大前（日立）&ensp;
         <wbr />
         通過予定時刻
       </>,
       <>
-        &ensp;日立駅中央口&ensp;
+        日立駅中央口&ensp;
         <wbr />
         到着予定時刻
       </>,
