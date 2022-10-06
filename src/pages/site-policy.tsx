@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import { DefaultLayout } from 'components/Layouts/DefaultLayout';
 import { Paragraph } from 'components/Typography';
 import Head from 'next/head';
+import Link from 'next/link';
 import { ComponentPropsWithoutRef } from 'react';
 import { NextPageWithLayout } from './_app';
 
@@ -29,7 +30,11 @@ const SitePolicy: NextPageWithLayout = () => (
         このウェブサイトは、茨城大学こうがく祭の公式ホームページ（以下「当サイト」）です。
         <br />
         <br />
-        当サイトは、こうがく祭実行委員会（以下「当委員会」）が作成・管理しています。ご質問やご意見などがありましたら、「お問い合わせ」のページよりお気軽にご連絡ください。
+        当サイトは、こうがく祭実行委員会（以下「当委員会」）が作成・管理しています。ご質問やご意見などがありましたら、
+        <Link href="/contact">
+          <a className="underline">「 お問い合わせ 」のページ</a>
+        </Link>
+        よりお気軽にご連絡ください。
         <br />
         <br />
         なお、サイトポリシーの内容を予告なしに変更する場合がありますので、あらかじめご了承ください。
