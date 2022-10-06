@@ -64,6 +64,7 @@ export const MenuDrawer = ({
         {links.map(
           (link, i) =>
             i !== 0 &&
+            i !== 1 &&
             i !== 2 &&
             i !== 5 && (
               <li key={link.href}>
@@ -75,6 +76,9 @@ export const MenuDrawer = ({
               </li>
             )
         )}
+        <li>
+          <MenuLink href={links[1].href}>{links[1].name}</MenuLink>
+        </li>
         <li>
           <MenuLink href={links[2].href}>{links[2].name}</MenuLink>
         </li>
