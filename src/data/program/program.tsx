@@ -509,7 +509,7 @@ const openLabMsae = {
       groupLink: '',
     },
     {
-      programName: '田中伊知郎',
+      programName: '田中伊知朗',
       groupName: '',
       place: 'N1棟 201室',
       introduction:
