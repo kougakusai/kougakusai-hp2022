@@ -8,6 +8,7 @@ import { LinkButton } from 'components/Button';
 import { InstagramIcon, TwitterIcon, YoutubeIcon } from 'components/Icon';
 import { CopyButton } from 'components/Button/CopyButton';
 import { FacebookIcon } from 'components/Icon/FacebookIcon';
+import { SmallLink } from 'components/Link';
 
 export const Footer = ({
   className,
@@ -64,12 +65,9 @@ export const Footer = ({
         />
       </div>
       <div className="mt-[18px] flex justify-center gap-[8px]">
-        {/* TODO: 遷移先ページ実装時にリンク有効化 */}
-        {/* <SmallLink href="/privacy-policy">プライバシーポリシー</SmallLink> */}
-        <del>
-          <Small>プライバシーポリシー</Small>
-        </del>
+        <SmallLink href="/privacy-policy">プライバシーポリシー</SmallLink>
         <Small>|</Small>
+        {/* TODO: 遷移先ページ実装時にリンク有効化 */}
         {/* <SmallLink href="/site-policy">サイトポリシー</SmallLink> */}
         <del>
           <Small>サイトポリシー</Small>
