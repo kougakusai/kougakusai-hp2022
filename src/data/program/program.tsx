@@ -542,7 +542,7 @@ const openLabCis = {
   variety: '研究室公開（情報工学科）',
   data: [
     {
-      programName: '上田・高橋・原口・堀田研究室',
+      programName: '上田・髙橋・原口・堀田研究室',
       groupName: '',
       place: 'S1棟 102室',
       introduction: '社会を支えるソフトウェアシステムの作り方',
