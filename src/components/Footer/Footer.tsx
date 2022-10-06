@@ -8,6 +8,7 @@ import { LinkButton } from 'components/Button';
 import { InstagramIcon, TwitterIcon, YoutubeIcon } from 'components/Icon';
 import { CopyButton } from 'components/Button/CopyButton';
 import { FacebookIcon } from 'components/Icon/FacebookIcon';
+import { SmallLink } from 'components/Link/SmallLink';
 
 export const Footer = ({
   className,
@@ -70,10 +71,7 @@ export const Footer = ({
           <Small>プライバシーポリシー</Small>
         </del>
         <Small>|</Small>
-        {/* <SmallLink href="/site-policy">サイトポリシー</SmallLink> */}
-        <del>
-          <Small>サイトポリシー</Small>
-        </del>
+        <SmallLink href="/site-policy">サイトポリシー</SmallLink>
         <Small>|</Small>
         {/* <SmallLink href="/covid-19-guildeline">
           感染症対策ガイドライン
