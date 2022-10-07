@@ -67,17 +67,8 @@ export const Footer = ({
       <div className="mt-[18px] flex justify-center gap-[8px]">
         <SmallLink href="/privacy-policy">プライバシーポリシー</SmallLink>
         <Small>|</Small>
-        {/* TODO: 遷移先ページ実装時にリンク有効化 */}
-        {/* <SmallLink href="/site-policy">サイトポリシー</SmallLink> */}
         <del>
           <Small>サイトポリシー</Small>
-        </del>
-        <Small>|</Small>
-        {/* <SmallLink href="/covid-19-guildeline">
-          感染症対策ガイドライン
-        </SmallLink> */}
-        <del>
-          <Small>感染症対策ガイドライン</Small>
         </del>
       </div>
       <LinkButton

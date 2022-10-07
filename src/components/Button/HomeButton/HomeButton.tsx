@@ -3,8 +3,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { ComponentPropsWithoutRef, useEffect, useReducer } from 'react';
 import { useCloseMenu } from 'hooks/useCloseMenu';
-
-const breakPoint = 639;
+import { useMobileView } from 'hooks/useMobileView';
 
 export const HomeButton = ({
   onClick,
@@ -14,26 +13,6 @@ export const HomeButton = ({
 }: ComponentPropsWithoutRef<'button'>) => {
   const router = useRouter();
   const closeMenu = useCloseMenu();
-
-  const useMobileView = () => {
-    const [matches, setMatches] = useReducer(
-      () =>
-        window
-          ? window.matchMedia(`(max-width:${breakPoint}px)`).matches
-          : true,
-      true
-    );
-    useEffect(() => {
-      const matchMedia = window.matchMedia(`(max-width:${breakPoint}px)`);
-      matchMedia.addEventListener('change', setMatches);
-      setMatches();
-
-      return () => matchMedia.removeEventListener('change', setMatches);
-    }, []);
-
-    return matches;
-  };
-
   const isMobile = useMobileView();
 
   return (
