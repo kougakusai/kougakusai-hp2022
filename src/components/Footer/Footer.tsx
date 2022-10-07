@@ -28,10 +28,11 @@ export const Footer = ({
           {SNSLinks.map(({ name, href, icon }) => (
             <a
               href={href}
-              key={name}
-              rel="noopener noreferrer"
-              target="_blank"
               title={'こうがく祭公式' + name}
+              className="h-10 w-10"
+              target="_blank"
+              rel="noopener noreferrer"
+              key={name}
             >
               {icon}
             </a>
@@ -45,8 +46,9 @@ export const Footer = ({
             <a
               href={href}
               title={'茨城大学工学部公式' + name}
-              rel="noopener noreferrer"
+              className="h-10 w-10"
               target="_blank"
+              rel="noopener noreferrer"
               key={name}
             >
               {icon}
