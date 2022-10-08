@@ -8,6 +8,7 @@ import { LinkButton } from 'components/Button';
 import { InstagramIcon, TwitterIcon, YoutubeIcon } from 'components/Icon';
 import { CopyButton } from 'components/Button/CopyButton';
 import { FacebookIcon } from 'components/Icon/FacebookIcon';
+import { TwitterTimeline } from 'components/TwitterTimeline';
 import { SmallLink } from 'components/Link';
 
 export const Footer = ({
@@ -40,7 +41,7 @@ export const Footer = ({
           ))}
           <CopyButton />
         </div>
-        {/* TODO: embed twitter timeline */}
+        <TwitterTimeline />
         <Heading>茨城大学工学部公式SNS</Heading>
         <div className="flex h-10 justify-center gap-x-6">
           {CoESNSLinks.map(({ name, href, icon }) => (
