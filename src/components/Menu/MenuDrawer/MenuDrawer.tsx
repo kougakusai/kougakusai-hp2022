@@ -61,6 +61,15 @@ export const MenuDrawer = ({
         <li>
           <MenuLink href={links[0].href}>{links[0].name}</MenuLink>
         </li>
+        <li>
+          <MenuLink href={links[1].href}>{links[1].name}</MenuLink>
+        </li>
+        <li>
+          <MenuLink href={links[2].href}>{links[2].name}</MenuLink>
+        </li>
+        <li>
+          <MenuLink href={links[5].href}>{links[5].name}</MenuLink>
+        </li>
         {links.map(
           (link, i) =>
             i !== 0 &&
@@ -76,15 +85,6 @@ export const MenuDrawer = ({
               </li>
             )
         )}
-        <li>
-          <MenuLink href={links[1].href}>{links[1].name}</MenuLink>
-        </li>
-        <li>
-          <MenuLink href={links[2].href}>{links[2].name}</MenuLink>
-        </li>
-        <li>
-          <MenuLink href={links[5].href}>{links[5].name}</MenuLink>
-        </li>
       </ul>
       <div className="mt-auto">
         <div className="mt-[40px] sm:mt-[120px]">

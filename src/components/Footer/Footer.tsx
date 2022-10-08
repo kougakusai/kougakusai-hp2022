@@ -28,10 +28,11 @@ export const Footer = ({
           {SNSLinks.map(({ name, href, icon }) => (
             <a
               href={href}
-              key={name}
-              rel="noopener noreferrer"
-              target="_blank"
               title={'こうがく祭公式' + name}
+              className="h-10 w-10"
+              target="_blank"
+              rel="noopener noreferrer"
+              key={name}
             >
               {icon}
             </a>
@@ -45,8 +46,9 @@ export const Footer = ({
             <a
               href={href}
               title={'茨城大学工学部公式' + name}
-              rel="noopener noreferrer"
+              className="h-10 w-10"
               target="_blank"
+              rel="noopener noreferrer"
               key={name}
             >
               {icon}
@@ -65,22 +67,13 @@ export const Footer = ({
       </div>
       <div className="mt-[18px] flex justify-center gap-[8px]">
         {/* TODO: 遷移先ページ実装時にリンク有効化 */}
-        {/* <SmallLink href="/privacy-policy">プライバシーポリシー</SmallLink> */}
-        <del>
-          <Small>プライバシーポリシー</Small>
-        </del>
+        {/* <SmallLink href="/privacy-policy">プライバシーポリシー</SmallLink>
         <Small>|</Small>
-        {/* <SmallLink href="/site-policy">サイトポリシー</SmallLink> */}
-        <del>
-          <Small>サイトポリシー</Small>
-        </del>
+        <SmallLink href="/site-policy">サイトポリシー</SmallLink>
         <Small>|</Small>
-        {/* <SmallLink href="/covid-19-guildeline">
+        <SmallLink href="/covid-19-guildeline">
           感染症対策ガイドライン
         </SmallLink> */}
-        <del>
-          <Small>感染症対策ガイドライン</Small>
-        </del>
       </div>
       <LinkButton
         className="mt-[40px] bg-[#18283F] font-bold text-white"
