@@ -9,7 +9,12 @@ export const TwitterTimeline = ({
 }: ComponentPropsWithoutRef<'section'>) => {
   useEffect(() => {
     const twitterScript = window.document.createElement('script');
-    twitterScript.src = 'https://platform.twitter.com/widgets.js';
+    twitterScript.setAttribute(
+      'src',
+      'https://platform.twitter.com/widgets.js'
+    );
+    twitterScript.setAttribute('async', '');
+    twitterScript.setAttribute('charset', 'utf-8');
     window.document
       .getElementsByClassName('twitter-timeline')[0]
       .before(twitterScript);
@@ -20,17 +25,17 @@ export const TwitterTimeline = ({
       className={clsx('flex flex-auto justify-center', className)}
       {...restProps}
     >
-      <div className="m-4 flex h-[37rem] w-[37.5rem] min-w-[20rem] shrink overflow-auto rounded-xl">
+      <div className="m-4 flex max-h-[37rem] min-h-[1rem] w-[37.5rem] min-w-[20rem] shrink flex-col overflow-auto">
         <a
           href="https://twitter.com/kougakufes?ref_src=twsrc%5Etfw"
           // eslint-disable-next-line tailwindcss/no-custom-classname
-          className="twitter-timeline"
+          className="twitter-timeline underline"
           target="_blank"
           data-lang="ja"
           data-dnt="true"
           rel="noopener noreferrer"
         >
-          Tweets by kougakufes
+          こうがく祭公式Twitterタイムライン
         </a>
       </div>
     </section>
