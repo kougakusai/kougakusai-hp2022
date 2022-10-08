@@ -66,10 +66,6 @@ export const Footer = ({
       </div>
       <div className="mt-[18px] flex justify-center gap-[8px]">
         <SmallLink href="/privacy-policy">プライバシーポリシー</SmallLink>
-        <Small>|</Small>
-        <del>
-          <Small>サイトポリシー</Small>
-        </del>
       </div>
       <LinkButton
         className="mt-[40px] bg-[#18283F] font-bold text-white"
