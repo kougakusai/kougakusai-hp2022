@@ -47,7 +47,7 @@ const About: NextPageWithLayout = () => (
       <Section heading="公式マスコット「こうがくサイ」">
         <p className="flex justify-center">
           <Image
-            src="/rhino_stand_happi_withshadow.png"
+            src="/about/rhino_stand_happi_withshadow.png"
             alt="公式マスコット「こうがくサイ」"
             width={142}
             height={129}
@@ -81,7 +81,14 @@ const About: NextPageWithLayout = () => (
           こうがく祭実行委員会 委員長
           <br />
           森本拓朗
-          {/*   TODO:画像挿入 <Image src="" alt="" width={136} height={136} /> */}
+          <br />
+          <br />
+          <Image
+            src="/about/chairperson.png"
+            alt="実行委員長写真"
+            width={136}
+            height={136}
+          />
         </Paragraph>
       </Section>
     </main>
