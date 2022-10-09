@@ -2,7 +2,7 @@ import type { NextPageWithLayout } from 'pages/_app';
 import Head from 'next/head';
 import { DefaultLayout } from 'components/Layouts/DefaultLayout';
 import { Paragraph } from 'components/Typography';
-import { ComponentPropsWithoutRef } from 'react';
+import { ComponentPropsWithoutRef, useEffect, useState } from 'react';
 import clsx from 'clsx';
 import { BusTimeTable } from 'components/BusTimeTable';
 
@@ -60,10 +60,10 @@ const Access: NextPageWithLayout = () => {
           </Paragraph>
           <br />
         </Section>
-        <Section className="px-0 sm:px-[1.125rem]">
+        <section className="rounded-lg bg-white py-4 px-2 [@media_screen_and_(min-width:400px)]:px-[1.125rem]">
           <H2 className="ml-4 sm:ml-0">バス時刻表（当日）</H2>
           <BusTimeTable />
-        </Section>
+        </section>
       </main>
     </>
   );
