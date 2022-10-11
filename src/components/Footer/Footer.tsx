@@ -71,9 +71,9 @@ export const Footer = ({
         <SmallLink href="/privacy-policy">プライバシーポリシー</SmallLink>
         <Small>|</Small>
         <SmallLink href="/site-policy">サイトポリシー</SmallLink>
-        <Small>|</Small>
         {/* TODO: 遷移先ページ実装時にリンク有効化 */}
-        {/* <SmallLink href="/covid-19-guildeline">
+        {/* <Small>|</Small>
+          <SmallLink href="/covid-19-guildeline">
           感染症対策ガイドライン
         </SmallLink> */}
       </div>
