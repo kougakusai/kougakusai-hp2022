@@ -3,7 +3,13 @@ import { ComponentPropsWithoutRef } from 'react';
 export const ClipboardIcon = (
   props: Omit<ComponentPropsWithoutRef<'svg'>, 'viewBox'>
 ) => (
-  <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" {...props}>
+  <svg
+    viewBox="0 0 16 16"
+    width="100%"
+    height="100%"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
     <desc>clipboard icon</desc>
     <rect
       fill="none"

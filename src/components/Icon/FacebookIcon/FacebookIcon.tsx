@@ -1,13 +1,13 @@
 import { ComponentPropsWithoutRef } from 'react';
 
-export const FacebookIcon = ({
-  className,
-  ...restProps
-}: Omit<ComponentPropsWithoutRef<'svg'>, 'viewBox'>) => (
+export const FacebookIcon = (
+  props: Omit<ComponentPropsWithoutRef<'svg'>, 'viewBox'>
+) => (
   <svg
     viewBox="0 0 1365.3333 1365.3333"
-    className={`h-full w-full ${className}`}
-    {...restProps}
+    width="100%"
+    height="100%"
+    {...props}
     xmlns="http://www.w3.org/2000/svg"
   >
     <desc>Facebook Icon</desc>

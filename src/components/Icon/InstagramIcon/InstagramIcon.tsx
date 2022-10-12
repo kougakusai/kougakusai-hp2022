@@ -1,13 +1,11 @@
 import { ComponentPropsWithoutRef } from 'react';
 
-export const InstagramIcon = ({
-  className,
-  ...restProps
-}: ComponentPropsWithoutRef<'svg'>) => (
+export const InstagramIcon = (props: ComponentPropsWithoutRef<'svg'>) => (
   <svg
     viewBox="0 0 1005 1005"
-    className={`h-full w-full ${className}`}
-    {...restProps}
+    width="100%"
+    height="100%"
+    {...props}
     xmlns="http://www.w3.org/2000/svg"
   >
     <desc>Instagram Icon</desc>
