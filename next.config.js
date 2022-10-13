@@ -7,6 +7,7 @@ const nextConfig = {
   images: {
     path: process.env.NEXT_PUBLIC_BASE_PATH + '/_next/image',
   },
+  trailingSlash: true,
   experimental: {
     images: {
       unoptimized: true,
