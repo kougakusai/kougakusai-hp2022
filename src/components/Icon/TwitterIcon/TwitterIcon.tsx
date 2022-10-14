@@ -7,6 +7,8 @@ export const TwitterIcon = ({
   <svg
     viewBox="0 0 248 204"
     className={`aspect-square h-full w-full ${className}`}
+    width="100%"
+    height="100%"
     {...restProps}
     xmlns="http://www.w3.org/2000/svg"
   >
