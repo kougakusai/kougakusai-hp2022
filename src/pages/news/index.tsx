@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { DefaultLayout } from 'components/Layouts/DefaultLayout';
 import { newsData } from 'data';
 import { NewsDetail } from 'components/News';
+import Link from 'next/link';
 
 const Contect: NextPageWithLayout = () => {
   return (
@@ -12,8 +13,12 @@ const Contect: NextPageWithLayout = () => {
       </Head>
 
       <main className="flex flex-col gap-[64px]">
-        {newsData.map((item) => (
-          <NewsDetail key={item.date + item.title} {...item} />
+        {newsData.map((item, index) => (
+          <Link href={`/news/${index}`} key={item.date + item.title}>
+            <a>
+              <NewsDetail {...item} />
+            </a>
+          </Link>
         ))}
       </main>
     </>
