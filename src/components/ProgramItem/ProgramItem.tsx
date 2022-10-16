@@ -2,24 +2,7 @@ import clsx from 'clsx';
 import Image from 'next/image';
 import { ComponentPropsWithoutRef, ReactNode } from 'react';
 import { InstagramIcon, TwitterIcon } from 'components/Icon';
-
-const InsideChip = () => (
-  <div
-    className="h-6 select-none whitespace-nowrap rounded-full bg-[#DCFCE7] px-3 text-center text-base text-[#16A34A]"
-    title="開催場所：屋内"
-  >
-    屋内
-  </div>
-);
-
-const StageChip = () => (
-  <div
-    className="h-6 select-none whitespace-nowrap rounded-full bg-[#DBEAFE] px-3 text-center text-base text-[#1D4ED8]"
-    title="開催場所：ステージ"
-  >
-    ステージ
-  </div>
-);
+import { Paragraph } from 'components/Typography';
 
 const PlaceChip = ({ place }: { place: string }) => (
   <div
@@ -35,6 +18,15 @@ const PlaceChip = ({ place }: { place: string }) => (
   </div>
 );
 
+const RegistrationChip = () => (
+  <div
+    className="h-6 select-none whitespace-nowrap rounded-full bg-[#FEE2E2] px-3 text-center text-base text-[#DC2626]"
+    title="事前申し込みが必要"
+  >
+    事前申し込み
+  </div>
+);
+
 type ProgramData = {
   programName: string;
   groupName: string;
@@ -44,47 +36,48 @@ type ProgramData = {
   groupLink?: string;
   twitter?: string;
   instagram?: string;
+  registration?: boolean;
 };
 
 export const ProgramItem = ({
   data,
   className,
   ...restProps
-}: { data: ProgramData } & ComponentPropsWithoutRef<'div'>) => (
-  <div
+}: { data: ProgramData } & ComponentPropsWithoutRef<'section'>) => (
+  <section
     className={clsx(
-      'inline-flex flex-col gap-y-2 rounded-lg bg-white p-4 font-[Roboto] text-[#18283F]',
+      'grid gap-y-4 rounded-lg bg-white p-4 font-[Roboto] text-[#18283F]',
       className
     )}
     {...restProps}
   >
-    <div className="flex justify-between gap-x-2">
+    <div className=" grid grid-flow-col grid-rows-2 gap-2 [grid-template-columns:1fr_auto;]">
       <h4
         className="overflow-hidden text-ellipsis whitespace-nowrap text-base font-bold"
         title={data.programName}
       >
         {data.programName}
       </h4>
-      {/* {place === 'inside' ? <InsideChip /> : <StageChip />} */}
-      <PlaceChip place={data.place} />
-    </div>
-    {data.groupLink ? (
-      <a
-        href={data.groupLink}
-        title={`${data.groupName}のサイトへ`}
-        target="_blank"
-        className="underline"
-        rel="noreferrer"
-      >
+      {data.groupLink ? (
+        <a
+          href={data.groupLink}
+          title={`${data.groupName}のサイトへ`}
+          target="_blank"
+          className="underline"
+          rel="noreferrer"
+        >
+          <h5 className="overflow-hidden text-ellipsis whitespace-nowrap">
+            {data.groupName}
+          </h5>
+        </a>
+      ) : (
         <h5 className="overflow-hidden text-ellipsis whitespace-nowrap">
           {data.groupName}
         </h5>
-      </a>
-    ) : (
-      <h5 className="overflow-hidden text-ellipsis whitespace-nowrap">
-        {data.groupName}
-      </h5>
-    )}
+      )}
+      {data.registration && <RegistrationChip />}
+      <PlaceChip place={data.place} />
+    </div>
     {data.image && (
       <div className="h-[3.75rem]">
         <Image
@@ -96,9 +89,11 @@ export const ProgramItem = ({
         />
       </div>
     )}
-    <div className="overflow-hidden text-ellipsis whitespace-pre-line">
-      {data.introduction}
-    </div>
+    {typeof data.introduction === 'string' ? (
+      <Paragraph>{data.introduction}</Paragraph>
+    ) : (
+      <div>{data.introduction}</div>
+    )}
 
     <div className="flex items-center justify-end gap-x-4">
       {data.instagram && (
@@ -122,5 +117,5 @@ export const ProgramItem = ({
         </a>
       )}
     </div>
-  </div>
+  </section>
 );
