@@ -6,13 +6,9 @@ const nextConfig = {
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
   images: {
     path: process.env.NEXT_PUBLIC_BASE_PATH + '/_next/image',
+    unoptimized: true,
   },
   trailingSlash: true,
-  experimental: {
-    images: {
-      unoptimized: true,
-    },
-  },
 };
 
 module.exports = nextConfig;
