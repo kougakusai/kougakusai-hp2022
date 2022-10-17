@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 const student = {
   variety: '学生企画',
@@ -791,7 +791,20 @@ const openLabCis = {
 //   ],
 // };
 
-export const programData = [
+export const programData: {
+  variety: string;
+  data: {
+    programName: string;
+    groupName: string;
+    place: string;
+    introduction?: string | ReactNode;
+    image?: string;
+    groupLink?: string;
+    twitter?: string;
+    instagram?: string;
+    registration?: boolean;
+  }[];
+}[] = [
   student,
   teacher,
   local,
@@ -804,4 +817,47 @@ export const programData = [
   openLabEes,
   openLabMsae,
   openLabCis,
+];
+
+export const stageProgramList = [
+  {
+    start: '10:30',
+    title: '日立第二高等学校演劇部',
+  },
+  {
+    start: '11:00',
+    title: '中南米音楽研究会日立支部',
+  },
+  {
+    start: '11:30',
+    title: '学生フォーミュラカーの走行と展示',
+  },
+  {
+    start: '12:00',
+    title: '茨城大学吹奏楽団日立支部',
+  },
+  {
+    start: '12:30',
+    title: '中南米音楽研究会日立支部',
+  },
+  {
+    start: '13:00',
+    title: '学生フォーミュラカーの走行と展示',
+  },
+  {
+    start: '13:30',
+    title: 'Cherry’s ダンスステージ',
+  },
+  {
+    start: '14:00',
+    title: 'ビンゴ大会',
+  },
+  {
+    start: '14:30',
+    title: '学生フォーミュラカーの走行と展示',
+  },
+  {
+    start: '15:00',
+    title: '大道芸サークルスウェット組合',
+  },
 ];
