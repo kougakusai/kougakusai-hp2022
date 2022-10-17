@@ -5,28 +5,24 @@ import { newsData } from 'data';
 import { NewsDetail } from 'components/News';
 import Link from 'next/link';
 
-const Contect: NextPageWithLayout = () => {
+const News: NextPageWithLayout = () => {
   return (
     <>
       <Head>
         <title>お知らせ | 2022年度こうがく祭公式HP</title>
       </Head>
 
-      <main className="flex flex-col gap-[64px]">
+      <main>
         {newsData.map((item, index) => (
-          <Link href={`/news/${index}`} key={item.date + item.title}>
-            <a>
-              <NewsDetail {...item} />
-            </a>
-          </Link>
+          <NewsDetail href={`/news/${index}`} {...item} key={index} />
         ))}
       </main>
     </>
   );
 };
 
-Contect.getLayout = (page) => (
+News.getLayout = (page) => (
   <DefaultLayout pageTitle="お知らせ">{page}</DefaultLayout>
 );
 
-export default Contect;
+export default News;
