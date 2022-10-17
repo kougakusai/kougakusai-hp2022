@@ -1,5 +1,5 @@
-import { ComponentPropsWithoutRef } from 'react';
-import { Paragraph, Small } from 'components/Typography';
+import Link, { LinkProps } from 'next/link';
+import { Small } from 'components/Typography';
 
 export const NewsDetail = ({
   date,
@@ -7,19 +7,20 @@ export const NewsDetail = ({
   title,
   detail,
   ...restProps
-}: ComponentPropsWithoutRef<'div'> & {
+}: LinkProps & {
   date: string;
   category: string;
   title: string;
   detail: string;
 }) => (
-  <div {...restProps}>
-    <div className="flex gap-[8px]">
-      <Small>{date}</Small>
-      <Small>|</Small>
-      <Small>{category}</Small>
-    </div>
-    <Paragraph className="mt-[8px] font-bold">{title}</Paragraph>
-    <Paragraph className="mt-[24px]">{detail}</Paragraph>
-  </div>
+  <Link {...restProps}>
+    <a className="block border-b border-b-[#CAC4C4] pt-6 pb-[0.625rem]">
+      <Small className="flex gap-x-2">
+        {date}
+        <span className="border-l border-current" />
+        {category}
+      </Small>
+      <h2 className="mt-[6px] text-base font-bold text-[#18283F]">{title}</h2>
+    </a>
+  </Link>
 );
