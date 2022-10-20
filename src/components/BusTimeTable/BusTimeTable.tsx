@@ -9,7 +9,7 @@ export const BusTimeTable = ({
 }: ComponentPropsWithoutRef<'section'>) => (
   <div
     className={clsx(
-      'font-{Roboto] flex flex-col gap-y-8 bg-white text-[#18283F]',
+      'flex flex-col gap-y-8 bg-white font-[Roboto] text-[#18283F]',
       className
     )}
     {...restProps}
