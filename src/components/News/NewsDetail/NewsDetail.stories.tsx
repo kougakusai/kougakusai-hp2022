@@ -13,6 +13,7 @@ const Template: ComponentStory<typeof NewsDetail> = (args) => (
 // eslint-disable-next-line storybook/prefer-pascal-case
 export const newsDetail = Template.bind({});
 newsDetail.args = {
+  href: '/',
   date: '2022/9/25',
   category: 'その他',
   title: 'HPが公開されました。',
