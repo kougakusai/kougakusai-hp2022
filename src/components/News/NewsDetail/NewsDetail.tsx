@@ -1,5 +1,6 @@
 import Link, { LinkProps } from 'next/link';
 import { Small } from 'components/Typography';
+import type { newsDataItemType } from 'data';
 
 export const NewsDetail = ({
   date,
@@ -7,12 +8,7 @@ export const NewsDetail = ({
   title,
   detail,
   ...restProps
-}: LinkProps & {
-  date: string;
-  category: string;
-  title: string;
-  detail: string;
-}) => (
+}: LinkProps & newsDataItemType) => (
   <Link {...restProps}>
     <a className="block border-b border-b-[#CAC4C4] pt-6 pb-[0.625rem]">
       <Small className="flex gap-x-2">

@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import { Paragraph, Small } from 'components/Typography';
 import { ComponentPropsWithoutRef, ReactNode } from 'react';
+import type { newsDataItemType } from 'data';
 
 export const NewsDetailCard = ({
   date,
@@ -9,12 +10,7 @@ export const NewsDetailCard = ({
   detail,
   className,
   ...restProps
-}: {
-  date: string;
-  title: string;
-  category: string;
-  detail: string | ReactNode;
-} & ComponentPropsWithoutRef<'section'>) => (
+}: newsDataItemType & ComponentPropsWithoutRef<'section'>) => (
   <section
     className={clsx(
       'rounded-lg bg-white p-4 font-[Roboto] text-[#18283F]',
