@@ -87,6 +87,7 @@ const links = [
   { name: 'こうがく祭について', href: '/about' },
   { name: '企画一覧', href: '/program' },
   { name: 'タイムスケジュール', href: '/schedule' },
+  { name: 'キッチンカーグルメ', href: '/kitchen-car' },
   { name: 'アクセス', href: '/access' },
   { name: 'お問い合わせ', href: '/contact' },
 ];
