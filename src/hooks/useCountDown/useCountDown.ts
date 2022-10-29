@@ -6,7 +6,7 @@ export const useCountDown = () => {
   const msPerDay = 24 * 60 * 60 * 1000;
 
   const now = Date.now();
-  const target = Date.UTC(2022, 10, 4, 15, 0, 0);
+  const target = Date.UTC(2022, 10, 5, 15, 0, 0);
   const daysLeft = Math.floor((target - now) / msPerDay);
 
   const daysLeftStr =
