@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import Image from 'next/image';
 import { Paragraph } from 'components/Typography';
+import Link from 'next/link';
 
 export type newsDataItemType = {
   date: string;
@@ -10,6 +11,20 @@ export type newsDataItemType = {
 };
 
 export const newsData: newsDataItemType[] = [
+  {
+    date: '2022/11/01',
+    category: 'その他',
+    title: 'ご来場に関する注意事項が更新されました。',
+    detail: (
+      <Paragraph>
+        こうがく祭の来場に際して、ご注意いただきたい事項について更新しました。
+        <Link href="/precaution">
+          <a className="underline">ご来場に関する注意事項</a>
+        </Link>
+        をご確認ください。
+      </Paragraph>
+    ),
+  },
   {
     date: '2022/10/13',
     category: 'その他',
