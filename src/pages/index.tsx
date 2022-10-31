@@ -4,8 +4,8 @@ import { TopPageLayout } from 'components/Layouts';
 import { Landing } from 'components/Landing';
 import { NewsList } from 'components/News';
 import { About } from 'components/About';
-import { SponsorList } from 'components/Sponsor';
 import { Footer } from 'components/Footer';
+import { Sponsor } from 'components/Sponsor';
 
 const Home: NextPageWithLayout = () => {
   return (
@@ -18,8 +18,7 @@ const Home: NextPageWithLayout = () => {
         <Landing />
         <NewsList id="お知らせ" className="mx-auto my-[16px] max-w-[37.5rem]" />
         <About className="mt-[80px]" />
-        {/* TODO 協賛企業情報追加後表示 */}
-        {/* <SponsorList className="mt-[24px] h-[200px]" /> */}
+        <Sponsor className="mx-auto my-6 max-w-[37.5rem]" />
         <Footer className="mt-6" />
       </main>
     </>
