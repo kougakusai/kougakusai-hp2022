@@ -1,1 +1,1 @@
-export * from './SponsorList';
+export * from './Sponsor';
