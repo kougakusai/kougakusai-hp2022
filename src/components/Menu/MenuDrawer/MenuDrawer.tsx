@@ -41,7 +41,9 @@ export const MenuDrawer = ({
               2022.11.05
             </span>
             <Space />
-            <span className="sm:text-[1.5rem] sm:leading-6">土曜日</span>
+            <span className="sm:text-[1.5rem] sm:leading-6">
+              土曜日&nbsp;雨天決行
+            </span>
           </Paragraph>
           <Paragraph className="mt-[16px] font-bold sm:text-[1.5rem] sm:leading-6">
             <MapPinIcon className="mr-[4px] inline-block sm:mr-[8px]" />
