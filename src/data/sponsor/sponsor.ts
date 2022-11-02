@@ -110,7 +110,7 @@ export const sponsorData: sponsorDataType = [
   },
   {
     name: '株式会社学情',
-    link: 'https://x.gd/ibaraki2022/',
+    link: 'https://x.gd/ibaraki2022',
     kana: 'カブシキガイシャ　ガクジョウ',
   },
   {
