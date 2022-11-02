@@ -21,7 +21,7 @@ export const sponsorData: sponsorDataType = [
   {
     name: 'Honda Cars 日立南 金沢店',
     link: 'https://dealer.honda.co.jp/hondacars-hitachiminami/',
-    kana: 'Honda Cars ヒタチミナミ　カナザワテン',
+    kana: 'Honda Cars ヒタチミナミ　カネサワテン',
   },
   {
     name: 'アイ・イー・シー株式会社',
