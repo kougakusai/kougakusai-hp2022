@@ -110,7 +110,7 @@ export const sponsorData: sponsorDataType = [
   },
   {
     name: '株式会社学情',
-    link: 'https://company.gakujo.ne.jp/',
+    link: 'https://x.gd/ibaraki2022/',
     kana: 'カブシキガイシャ　ガクジョウ',
   },
   {
@@ -305,6 +305,7 @@ export const sponsorData: sponsorDataType = [
   },
   {
     name: '放課後児童クラブKusuKusu',
+    link: 'http://www.kusu2.jp/',
     kana: 'ホウカゴジドウクラブ　KusuKusu',
   },
 ].sort((a, b) => (a.kana || a.name).localeCompare(b.kana || b.name, 'ja'));
