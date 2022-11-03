@@ -24,6 +24,10 @@ export const sponsorData: sponsorDataType = [
     kana: 'Honda Cars ヒタチミナミ　カネサワテン',
   },
   {
+    name: 'JX金属株式会社',
+    kana: 'JXキンゾク　カブシキガイシャ',
+  },
+  {
     name: 'アイ・イー・シー株式会社',
     link: 'https://www.iecha.co.jp/',
     kana: 'アイイーシー　カブシキガイシャ',
