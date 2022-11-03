@@ -16,13 +16,19 @@ export const NewsList = ({
     {...restProps}
   >
     <Heading className="text-center">お知らせ</Heading>
-    {newsData.map((item) => (
-      <NewsItem key={item.date + item.title} className="mt-[24px]" {...item} />
-    ))}
-    <div className="flex justify-center">
+    <div className="mt-4 grid gap-y-6">
+      {newsData.map((item, index) => (
+        <NewsItem
+          href={`/news/${index}`}
+          {...item}
+          key={item.date + item.title}
+        />
+      ))}
+    </div>
+    <div className="mt-16 flex justify-center">
       <LinkButton
         href="/news"
-        className="mt-[24px] items-center border border-solid border-[#18283F] font-bold text-[#18283F]"
+        className="items-center border border-solid border-[#18283F] font-bold text-[#18283F]"
       >
         もっと見る
       </LinkButton>
