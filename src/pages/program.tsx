@@ -69,10 +69,6 @@ const Program: NextPageWithLayout = () => {
             </tbody>
           </table>
         </Section>
-        <Section head="スタンプラリー">
-          スタンプラリー企画詳細は後日掲載予定
-          {/* TODO:<Link href="/program/stamp/"><a className="underline">スタンプラリー企画詳細ページ</a></Link> */}
-        </Section>
         {!!registProgram.length && (
           <section className="grid gap-y-4">
             <Paragraph>以下の企画は事前の申し込みが必要です。</Paragraph>
