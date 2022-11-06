@@ -36,9 +36,7 @@ export const Landing = () => {
             height={isMobile ? 170 : 340}
           />
         </div>
-        <CountDown className="mx-auto" />
-        {/* TODO:終了後`CountDown`と入れ替えで有効化 */}
-        {/* <EndCard /> */}
+        <EndCard />
         <RoundedButton
           href="#お知らせ"
           title="お知らせを見る"
