@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { RoundedButton } from 'components/Button';
 import { CountDown } from 'components/CountDown';
 import { useMobileView } from 'hooks/useMobileView';
+import { EndCard } from 'components/EndCard';
 
 export const Landing = () => {
   const isMobile = useMobileView();
@@ -35,7 +36,7 @@ export const Landing = () => {
             height={isMobile ? 170 : 340}
           />
         </div>
-        <CountDown className="mx-auto" />
+        <EndCard />
         <RoundedButton
           href="#お知らせ"
           title="お知らせを見る"

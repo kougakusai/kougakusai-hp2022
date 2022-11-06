@@ -1,8 +1,10 @@
-export const kitchenCarData: {
+export type kitchenCarDataType = {
   name: string;
   src: string;
   description: string | string[];
-}[] = [
+};
+
+export const kitchenCarData: kitchenCarDataType[] = [
   {
     name: '❶ 日立市立日立特別支援学校',
     src: '/kitchen_car/1日立市立日立特別支援学校.png',

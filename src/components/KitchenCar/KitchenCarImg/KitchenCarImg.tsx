@@ -1,16 +1,14 @@
 import clsx from 'clsx';
+import { kitchenCarDataType } from 'data/kitchen_car';
 import Image from 'next/image';
 import { ComponentPropsWithoutRef } from 'react';
-
-// TODO: KitchenCarDataType 実装後置き換え
-type dataType = { name: string; src: string; description: string | string[] };
 
 export const KitchenCarImg = ({
   data,
   className,
   ...restProps
 }: {
-  data: dataType;
+  data: kitchenCarDataType;
 } & Omit<ComponentPropsWithoutRef<'section'>, 'children'>) => (
   <section
     className={clsx('w-[18.75rem] bg-black p-1', className)}
