@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { RoundedButton } from 'components/Button';
 import { CountDown } from 'components/CountDown';
 import { useMobileView } from 'hooks/useMobileView';
+import { EndCard } from 'components/EndCard';
 
 export const Landing = () => {
   const isMobile = useMobileView();
@@ -36,6 +37,8 @@ export const Landing = () => {
           />
         </div>
         <CountDown className="mx-auto" />
+        {/* TODO:終了後`CountDown`と入れ替えで有効化 */}
+        {/* <EndCard /> */}
         <RoundedButton
           href="#お知らせ"
           title="お知らせを見る"
